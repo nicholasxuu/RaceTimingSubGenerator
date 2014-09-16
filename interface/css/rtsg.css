@@ -1,0 +1,16 @@
+
+.form_box {
+	width: 400px;
+}
+
+.form_box textarea {
+	width: 98%;
+}
+
+.form_element {
+	width: 100%;
+}
+
+#step3_cross_time {
+	width: 50%;
+}
