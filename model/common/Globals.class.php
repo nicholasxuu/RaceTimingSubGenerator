@@ -30,5 +30,17 @@ class Globals {
 		return true;
 	}
 
+	public static function convertTimeToSeconds($string) {
+		if (!preg_match('/[0-9]+/', $string)) {
+			return false;
+		}
+		if (preg_match('/^[0-9]+\.[0-9]+$/', $string) || preg_match('/^[0-9]+$/', $string)) {
+			return floatval($string);
+		} else if (preg_match('/^[0-9]+\:[0-9]+\.[0-9]+$/', $string)) {
+			$strArr = explode(":", $string);
+			return floatval($strArr[0]) * 60 + floatval($strArr[1]);
+		}
+		return false;
+	}
 
 } 

@@ -7,6 +7,13 @@
 <body>
 <form action="step2.php" id="step1_form" class="form_box" method="post" enctype="multipart/form-data">
 
+	<select name="input_origin" id="step1_drop2" class="form_element">
+		<option value="RCScoringPro">RCScoringPro</option>
+		<option value="MyLaps">MyLaps</option>
+		<option value="GoKartRacer">GoKartRacer</option>
+	</select>
+	<br/>
+
 	<select name="input_type" id="step1_drop" class="form_element">
 		<option value="file_upload">File Upload</option>
 		<option value="text_area">Text</option>
@@ -15,6 +22,8 @@
 	<br/>
 
 	<input name="data_file" id="step1_fileupload"  class="form_element" type="file" />
+	<br/>
+	<input name="data_file2" id="step1_fileupload2"  class="form_element" type="file" />
 	<br/>
 	<textarea name="text_area" id="step1_textarea" class="form_element" ></textarea>
 	<br/>

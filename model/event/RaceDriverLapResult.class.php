@@ -25,9 +25,17 @@ class RaceDriverLapResult {
 	/**
 	 * Add a lap time to the end of laptime array
 	 * @param float $lapTime
+	 * @param float $minimumLegalLaptime
 	 */
-	function addLapTime($lapTime) {
-		$this->lapTimeList[] = $lapTime;
+	function addLapTime($lapTime, $minimumLegalLaptime=0.0) {
+		if ($minimumLegalLaptime != 0 &&
+			count($this->lapTimeList) > 0 &&
+			$this->lapTimeList[count($this->lapTimeList) - 1] < $minimumLegalLaptime) {
+			$this->lapTimeList[count($this->lapTimeList) - 1] += $lapTime;
+		} else {
+			$this->lapTimeList[] = $lapTime;
+		}
+
 		$this->isDirty = true;
 	}
 	
@@ -122,7 +130,7 @@ class RaceDriverLapResult {
 		for ($i = $start_i; $i < count($this->lapTimeList); $i++) {
 			$sum += pow( ($this->lapTimeList[$i] - $average) , 2);
 		}
-		$std_dev = sqrt($sum / (count($this->lapTimeList) - start_i));
+		$std_dev = sqrt($sum / (count($this->lapTimeList) - $start_i));
 
 		$this->consistency = 100 - (floatval(intval(($std_dev/$average * 10000))) / 100);
 		

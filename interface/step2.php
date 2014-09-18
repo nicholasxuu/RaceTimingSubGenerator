@@ -8,16 +8,16 @@
 
 include_once "../index.php";
 
-function get_upload() {
+function get_upload($dataFileElement) {
 	if (
-		!isset($_FILES['data_file']['error']) ||
-		is_array($_FILES['data_file']['error'])
+		!isset($_FILES[$dataFileElement]['error']) ||
+		is_array($_FILES[$dataFileElement]['error'])
 	) {
 		throw new Exception('Invalid parameters.');
 	}
 
-	// Check $_FILES['data_file']['error'] value.
-	switch ($_FILES['data_file']['error']) {
+	// Check $_FILES[$dataFileElement]['error'] value.
+	switch ($_FILES[$dataFileElement]['error']) {
 		case UPLOAD_ERR_OK:
 			break;
 		case UPLOAD_ERR_NO_FILE:
@@ -29,31 +29,35 @@ function get_upload() {
 			throw new Exception('Unknown errors.');
 	}
 
-	if ((($_FILES['data_file']['type'] == "text/csv") ||
-		 ($_FILES['data_file']['type'] == "text/txt") ||
-		 ($_FILES['data_file']['type'] == "text/plain") ||
-		 ($_FILES['data_file']['type'] == "application/octet-stream")) &&
-		($_FILES['data_file']['size'] < 1000000))
+	if ((($_FILES[$dataFileElement]['type'] == "text/csv") ||
+		 ($_FILES[$dataFileElement]['type'] == "text/txt") ||
+		 ($_FILES[$dataFileElement]['type'] == "text/plain") ||
+		 ($_FILES[$dataFileElement]['type'] == "application/octet-stream")) &&
+		($_FILES[$dataFileElement]['size'] < 1000000))
 	{
-		if ($_FILES['data_file']['error'] > 0)
+		if ($_FILES[$dataFileElement]['error'] > 0)
 		{
-			throw new Exception("Error: {$_FILES['data_file']['error']}");
+			throw new Exception("Error: {$_FILES[$dataFileElement]['error']}");
 		}
 		else
 		{
-			$fileContent= file_get_contents($_FILES['data_file']['tmp_name']);
+			$fileContent= file_get_contents($_FILES[$dataFileElement]['tmp_name']);
 			return $fileContent;
 		}
 	}
 	else
 	{
-		throw new Exception("Invalid File: Type={$_FILES['data_file']['type']}; Size={$_FILES['data_file']['size']}");
+		throw new Exception("Invalid File: Type={$_FILES[$dataFileElement]['type']}; Size={$_FILES[$dataFileElement]['size']}");
 	}
 }
 
 if ($_POST['input_type'] == "file_upload") {
 	try {
-		$content = get_upload();
+		$content = get_upload('data_file');
+		$content2 = get_upload('data_file2');
+		if (!empty($content2)) {
+			$content .= "\n\n" . $content2;
+		}
 	} catch (Exception $e) {
 		echo $e;
 	}
@@ -62,14 +66,22 @@ if ($_POST['input_type'] == "file_upload") {
 }
 
 if (!isset($content) || empty($content)) {
-
 	echo "empty content";
 	exit;
-
 }
 
 $file = preg_split("/(\r|\n|\r\n)/", $content);
-$parser = new Model\Parser\NCHDataParser($file);
+
+if ($_POST['input_origin'] == "RCScoringPro") {
+	$parser = new Model\Parser\NCHDataParser($file);
+} else if ($_POST['input_origin'] == "MyLaps") {
+	$parser = new Model\Parser\MylapsDataParser($file);
+} else if ($_POST['input_origin'] == "GoKartRacer") {
+	$parser = new Model\Parser\GKRDataParser($file);
+} else {
+	echo "empty input type.";
+	exit;
+}
 
 $raceList = $parser->totalResult->getRaceNameList();
 
@@ -82,6 +94,8 @@ echo <<< HTML
 </head>
 <body>
 <form action="step3.php" id="step2_form" class="form_box" method="post" enctype="multipart/form-data">
+	<input type="text" class="form_element" name="input_origin" value="{$_POST['input_origin']}" />
+	<br/>
 
 	<select name="race_id" id="step2_drop" class="form_element">
 HTML;

@@ -21,7 +21,16 @@ if (!isset($content) || empty($content)) {
 }
 
 $file = preg_split("/(\r|\n|\r\n)/", $content);
-$parser = new Model\Parser\NCHDataParser($file);
+if ($_POST['input_origin'] == "RCScoringPro") {
+	$parser = new Model\Parser\NCHDataParser($file);
+} else if ($_POST['input_origin'] == "MyLaps") {
+	$parser = new Model\Parser\MylapsDataParser($file);
+} else if ($_POST['input_origin'] == "GoKartRacer") {
+	$parser = new Model\Parser\GKRDataParser($file);
+} else {
+	echo "empty input type.";
+	exit;
+}
 
 
 $si = new Model\Subtitle\ScriptInfo();

@@ -19,7 +19,16 @@ if (!isset($content) || empty($content)) {
 }
 
 $file = preg_split("/(\r|\n|\r\n)/", $content);
-$parser = new Model\Parser\NCHDataParser($file);
+if ($_POST['input_origin'] == "RCScoringPro") {
+	$parser = new Model\Parser\NCHDataParser($file);
+} else if ($_POST['input_origin'] == "MyLaps") {
+	$parser = new Model\Parser\MylapsDataParser($file);
+} else if ($_POST['input_origin'] == "GoKartRacer") {
+	$parser = new Model\Parser\GKRDataParser($file);
+} else {
+	echo "empty input type.";
+	exit;
+}
 
 $userList = $parser->totalResult->raceResultList[$rid]->getNameList();
 
@@ -32,7 +41,8 @@ echo <<< HTML
 </head>
 <body>
 <form action="step4.php" id="step3_form" class="form_box" method="post" enctype="multipart/form-data">
-
+	<input type="text" class="form_element" name="input_origin" value="{$_POST['input_origin']}" />
+	<br/>
 	<select name="user_id" id="step3_drop" class="form_element">
 HTML;
 
