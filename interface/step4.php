@@ -41,7 +41,8 @@ $ctd = new Model\Subtitle\CountDown($ts->getRaceTime(), $ts->getStartTime());
 
 $outputFilename = preg_replace("/\s+/", ".", $parser->totalResult->raceResultList[$rid]->name);
 
-header('Content-type: application/text');
-header("Content-disposition: attachment; filename={$outputFilename}.ass");
+
+//header('Content-type: application/text');
+//header("Content-disposition: attachment; filename={$outputFilename}.ass");
 echo $si . "\n" . $ts . "\n" . $ctd;
 

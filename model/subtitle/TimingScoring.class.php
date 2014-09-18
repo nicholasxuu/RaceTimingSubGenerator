@@ -70,7 +70,6 @@ class TimingScoring {
 						$this_name = $this->makeLengthString($ctdd->name, 18, "left");
 						$this_lastlap = $this->makeLengthString($ctdd->lastLap, 7, "right");
 						$this_lapNo = $this->makeLengthString($ctdd->lapNo, 4, "right");
-						//TODO: fix behind calculation
 						$this_behind = $this->makeLengthString(($ctdd->behind == 0 ? "" : $ctdd->behind), 6, "left");
 
 						if ($this->raceResult->getIdByName($ctdd->name) == $did) {
@@ -92,7 +91,7 @@ class TimingScoring {
 				
 				// driver info
 				$ctrd = new Event\CurrTimeRaceData($currTime, $this->raceResult);
-				
+				//var_dump($ctrd->currTimeDriverDataArr);
 				foreach ($ctrd->currTimeDriverDataArr as $ctdd) { /* @var $ctdd Event\CurrTimeDriverData */
 					
 					//var_dump($ctdd);
@@ -105,12 +104,11 @@ class TimingScoring {
 						$this_name = $this->makeLengthString($ctdd->name, 18, "left");
 						$this_lastlap = $this->makeLengthString($ctdd->lastLap, 7, "right");
 						$this_lapNo = $this->makeLengthString($ctdd->lapNo, 4, "right");
-						$this_behind = $this->makeLengthString($ctdd->behind, 6, "left");
+						$this_behind = $this->makeLengthString($this->raceResult->driverList[$this_did]->behind, 6, "left");
 
-
-						$this_racetime = $this->raceResult->driverList[$this_did]->totalTime;
-						$this_fastlap = $this->raceResult->driverList[$this_did]->lapData->bestLap;
-						$this_consistency = $this->raceResult->driverList[$this_did]->lapData->consistency;
+						$this_racetime = $this->makeLengthString($this->raceResult->driverList[$this_did]->totalTime, 9, "right");
+						$this_fastlap = $this->makeLengthString($this->raceResult->driverList[$this_did]->lapData->getBestlap(true), 7, "right");
+						$this_consistency = $this->makeLengthString($this->raceResult->driverList[$this_did]->lapData->getConsistency(true), 11, "left");
 
 						if ($this_did == $did) {
 							$contentFlashString .= "_\N";
@@ -195,13 +193,12 @@ class TimingScoring {
 				$racewinner = $this->raceResult->driverList[0];
 				if (isset($racewinner->totalTime) && !empty($racewinner->totalTime)) {
 					$winnerTime = $racewinner->totalTime;
-					$retval = 0;
 					if (strpos($winnerTime, ":") !== false) {
 						// warning: only accept up to minutes
 						$minutes = intval(strstr($winnerTime, ":", true));
 						$this->raceTime = $minutes;
 					}
-				} 
+				}
 			}
 		} 
 		return $this->raceTime;

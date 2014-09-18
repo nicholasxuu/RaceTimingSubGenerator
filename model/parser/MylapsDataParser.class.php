@@ -53,7 +53,7 @@ class MylapsDataParser {
 
 				if ($stage == "start") { // general info area
 					// check if there's minimum legal laptime setting, if so, setup member var
-					if (strstr($cleanLine, "MinimumLegalLaptime") === 0) {
+					if (strpos($cleanLine, "MinimumLegalLaptime") === 0) {
 						$lineArr = explode("=", $cleanLine);
 						if (count($lineArr) > 1 && !empty($lineArr[1])) {
 							$this->minLegalLaptime = floatval($lineArr[1]);
@@ -89,6 +89,7 @@ class MylapsDataParser {
 					$currRaceDriverData->name = $lineArr[2];
 					$currRaceDriverData->bestLap = Common\Globals::convertTimeToSeconds($lineArr[7]);
 					$currRaceDriverData->totalLaps = $lineArr[3];
+					$currRaceDriverData->totalTime = $lineArr[6];
 					$currRaceDriverData->carNum = $lineArr[1];
 					$currRaceDriverData->behind = trim($lineArr[5], " -");
 					$currRaceDriverData->finishPosition = $lineArr[0];
@@ -115,7 +116,7 @@ class MylapsDataParser {
 					continue;
 				} else if ($stage == "laptimes_content") {
 					$lineArr = explode("\t", $cleanLine);
-					if ($lineArr[2] == "Green Flag" && $lineArr[3] == "") {
+					if (($lineArr[2] == "Green Flag" || $lineArr[2] == "Extra Flag" || $lineArr[2] == "Finish Flag") && $lineArr[3] == "") {
 						// ignore this line
 						continue;
 					} else {

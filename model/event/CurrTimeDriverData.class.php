@@ -29,17 +29,22 @@ class CurrTimeDriverData {
 		$lap_i = 0;
 		$lastTime = 0.0;
 		$lastLapTime = 0.0;
+
+
 		foreach ($rdd->lapData->lapTimeList as $laptime) {
-			if (($lastTime + $laptime) > $currTime) {
-				// found the one
+			if (!empty($laptime)) {
+				if (($lastTime + $laptime) > $currTime) {
+					// found the one
+
+					break;
+				} else {
+					$lap_i++;
+					$lastTime = $lastTime + $laptime;
+					$lastLapTime = $laptime;
+				}
 				$this->lapNo = $lap_i; //TODO: check +1 or not
 				$this->lastLap = $lastLapTime;
 				$this->lastTimeCrossLine = $lastTime;
-				break;
-			} else {
-				$lap_i++;
-				$lastTime = $lastTime + $laptime;
-				$lastLapTime = $laptime;
 			}
 		}
 	}
