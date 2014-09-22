@@ -102,13 +102,13 @@ class TimingScoring {
 
 						$this_pos = $this->makeLengthString($ctdd->pos, 3, "right");
 						$this_name = $this->makeLengthString($ctdd->name, 18, "left");
-						$this_lastlap = $this->makeLengthString($ctdd->lastLap, 7, "right");
+						$this_lastlap = $this->makeLengthString($ctdd->lastLap, 7, "right", "cut");
 						$this_lapNo = $this->makeLengthString($ctdd->lapNo, 4, "right");
-						$this_behind = $this->makeLengthString($this->raceResult->driverList[$this_did]->behind, 6, "left");
+						$this_behind = $this->makeLengthString($this->raceResult->driverList[$this_did]->behind, 6, "left", "cut");
 
-						$this_racetime = $this->makeLengthString($this->raceResult->driverList[$this_did]->totalTime, 9, "right");
-						$this_fastlap = $this->makeLengthString($this->raceResult->driverList[$this_did]->lapData->getBestlap(true), 7, "right");
-						$this_consistency = $this->makeLengthString($this->raceResult->driverList[$this_did]->lapData->getConsistency(true), 11, "left");
+						$this_racetime = $this->makeLengthString($this->raceResult->driverList[$this_did]->totalTime, 9, "right", "cut");
+						$this_fastlap = $this->makeLengthString($this->raceResult->driverList[$this_did]->lapData->getBestlap(true), 7, "right", "cut");
+						$this_consistency = $this->makeLengthString($this->raceResult->driverList[$this_did]->lapData->getConsistency(true), 11, "left", "cut");
 
 						if ($this_did == $did) {
 							$contentFlashString .= "_\N";
@@ -220,13 +220,17 @@ class TimingScoring {
 	 * @param string $align
 	 * @return string
 	 */
-	function makeLengthString($str, $len, $align="right") {
+	function makeLengthString($str, $len, $align="right", $overLength="...") {
 		if (is_int($str) || is_float($str)) {
 			$str = strval($str);
 		}
 		
 		if (strlen($str) > $len) {
-			$str = substr($str, 0, $len-3) . "...";
+			if ($overLength == '...') {
+				$str = substr($str, 0, $len-3) . "...";
+			} else if ($overLength == "cut") {
+				$str = substr($str, 0, $len);
+			}
 		}
 		
 		$whiteStr = "";

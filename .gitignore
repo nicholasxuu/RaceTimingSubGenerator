@@ -36,3 +36,6 @@ Icon
 .Trashes
 
 *.yaml
+*.xml
+*.iml
+*.name
