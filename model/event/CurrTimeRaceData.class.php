@@ -29,7 +29,7 @@ class CurrTimeRaceData {
 			} else {
 				// if on the same lap v.s. previous ppl, then update behind value.
 				if (!is_null($prevLapNo)) {
-					$this->currTimeDriverDataArr[$pos-1]->behind = $this->currTimeDriverDataArr[$pos-1]->lastTimeCrossLine - $this->currTimeDriverDataArr[$pos-2]->lastTimeCrossLine;
+					$this->currTimeDriverDataArr[$pos-1]->behind = round($this->currTimeDriverDataArr[$pos-1]->lastTimeCrossLine - $this->currTimeDriverDataArr[$pos-2]->lastTimeCrossLine, 3);
 				}
 			}
 		}
