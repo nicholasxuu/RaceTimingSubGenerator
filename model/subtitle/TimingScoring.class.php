@@ -68,9 +68,9 @@ class TimingScoring {
 
 						$this_pos = $this->makeLengthString($ctdd->pos, 3, "right");
 						$this_name = $this->makeLengthString($ctdd->name, 18, "left");
-						$this_lastlap = $this->makeLengthString($ctdd->lastLap, 7, "right");
+						$this_lastlap = $this->makeLengthString($ctdd->lastLap, 7, "right", "cut");
 						$this_lapNo = $this->makeLengthString($ctdd->lapNo, 4, "right");
-						$this_behind = $this->makeLengthString(($ctdd->behind == 0 ? "" : $ctdd->behind), 6, "left");
+						$this_behind = $this->makeLengthString(($ctdd->behind == 0 ? "" : $ctdd->behind), 6, "left", "cut");
 
 						if ($this->raceResult->getIdByName($ctdd->name) == $did) {
 							$contentFlashString .= "_\N";
@@ -243,6 +243,7 @@ class TimingScoring {
 		} else if ($align = "left") {
 			return $str . $whiteStr;
 		}
-		
+
+		return "";
 	}
 }
