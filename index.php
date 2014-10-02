@@ -21,3 +21,9 @@ function my_autoload($class) {
 
 }
 spl_autoload_register("my_autoload");
+
+// redirect to user interface
+$query = $_SERVER['PHP_SELF'];
+if (\Model\Common\Globals::endsWith($query, "index.php")) {
+	header('Location: ./interface/step1.php');
+}

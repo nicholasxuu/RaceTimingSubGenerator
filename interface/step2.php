@@ -54,7 +54,11 @@ function get_upload($dataFileElement) {
 if ($_POST['input_type'] == "file_upload") {
 	try {
 		$content = get_upload('data_file');
-		$content2 = get_upload('data_file2');
+		try {
+			$content2 = get_upload('data_file2');
+		} catch (Exception $e) {
+			// ignore
+		}
 		if (!empty($content2)) {
 			$content .= "\n\n" . $content2;
 		}
