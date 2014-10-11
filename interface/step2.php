@@ -94,13 +94,16 @@ echo <<< HTML
 <html>
 <head>
 	<title>Step1</title>
-	<link rel="stylesheet" type="text/css" href="css/rtsg.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 <form action="step3.php" id="step2_form" class="form_box" method="post" enctype="multipart/form-data">
-	<input type="text" class="form_element" name="input_origin" value="{$_POST['input_origin']}" />
+	<input type="text" class="form_element" name="input_origin" value="{$_POST['input_origin']}"  readonly="readonly"/>
 	<br/>
-
+	<br/>
+	Select Race: <br/>
 	<select name="race_id" id="step2_drop" class="form_element">
 HTML;
 
@@ -112,11 +115,11 @@ echo <<< HTML
 	</select>
 
 	<br/>
-
-	<textarea name="text_area" id="step2_textarea" class="form_element" >{$content}</textarea>
 	<br/>
-
-	<input type="submit" id="step2_submit" class="form_element" value="Next" />
+	<textarea name="text_area" id="step2_textarea" class="form_element" readonly="readonly">{$content}</textarea>
+	<br/>
+	<br/>
+	<input type="submit" id="step2_submit" class="btn" value="Next" />
 </form>
 
 </body>

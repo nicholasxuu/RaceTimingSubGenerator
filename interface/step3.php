@@ -37,12 +37,16 @@ echo <<< HTML
 <html>
 <head>
 	<title>Step1</title>
-	<link rel="stylesheet" type="text/css" href="css/rtsg.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 <form action="step4.php" id="step3_form" class="form_box" method="post" enctype="multipart/form-data">
-	<input type="text" class="form_element" name="input_origin" value="{$_POST['input_origin']}" />
+	<input type="text" class="form_element" name="input_origin" value="{$_POST['input_origin']}" readonly="readonly"/>
 	<br/>
+	<br/>
+	Driver Name: <br/>
 	<select name="user_id" id="step3_drop" class="form_element">
 HTML;
 
@@ -54,18 +58,19 @@ echo <<< HTML
 	</select>
 
 	<br/>
+	<br/>
 
-	CrossLineTime:
+	First CrossLine Time in Video:<br/>
 	<input type="number" step="0.001" name="cross_time" min="0" max="300" id="step3_cross_time" class="form_element"/>
 
 	<br/>
 
-	<textarea name="text_area" id="step3_textarea" class="form_element" >{$content}</textarea>
+	<textarea name="text_area" id="step3_textarea" class="form_element"  readonly="readonly">{$content}</textarea>
 	<br/>
-	<input type="text" name="race_id" id="step3_race_id" class="form_element" value="{$rid}" />
+	<input type="text" name="race_id" id="step3_race_id" class="form_element" value="{$rid}"  readonly="readonly"/>
 	<br/>
 
-	<input type="submit" id="step3_submit" class="form_element" value="Next" />
+	<input type="submit" id="step3_submit" class="btn" value="Next" />
 </form>
 
 </body>
