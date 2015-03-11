@@ -5,6 +5,7 @@ use Model\Common\Globals;
 /**
  * Class TotalResult
  * Total result for the whole race event.
+ * Contains multiple races/RaceResults.
  * @package Event
  */
 class TotalResult {
@@ -31,7 +32,8 @@ class TotalResult {
 	 */
 	function addRace($name) {
 		$this->raceResultList[] = new RaceResult($name);
-		return array_pop(array_keys($this->raceResultList));
+		$keys = array_keys($this->raceResultList);
+		return array_pop($keys);
 	}
 
 	/**

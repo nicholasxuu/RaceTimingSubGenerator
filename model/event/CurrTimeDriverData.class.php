@@ -2,10 +2,10 @@
 namespace Model\Event;
 
 /**
+ * Class CurrTimeRaceData
+ * @package Event
+ * Used to calculate one driver's race information for a specific time in a race.
  * Data to display in each row, and potential data for deciding its position
- * 
- * @author Nicholas
- *
  */
 class CurrTimeDriverData {
 	public $pos;

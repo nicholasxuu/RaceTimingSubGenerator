@@ -26,8 +26,6 @@ class MylapsDataParser {
 		$this->totalResult = new Event\TotalResult();
 		$this->minLegalLaptime = 0;
 
-
-
 		$this->totalResult->addRace("RaceName");
 
 

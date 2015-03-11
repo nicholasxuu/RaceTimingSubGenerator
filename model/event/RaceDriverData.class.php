@@ -1,6 +1,12 @@
 <?php
 namespace Model\Event;
 
+/**
+ * Class RaceDriverData
+ * @package Event
+ * Stores a driver's all data for a race.
+ * Contains RaceDriverLapResult.
+ */
 class RaceDriverData {
 	/** @var string */
 	public $name = "";

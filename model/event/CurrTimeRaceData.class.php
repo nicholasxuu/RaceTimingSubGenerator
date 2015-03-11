@@ -1,6 +1,11 @@
 <?php
 namespace Model\Event;
 
+/**
+ * Class CurrTimeRaceData
+ * @package Event
+ * Used to calculate all driver's race information for a specific time in a race.
+ */
 class CurrTimeRaceData {
 	/**
 	 * @var CurrTimeDriverData[]
@@ -33,7 +38,6 @@ class CurrTimeRaceData {
 				}
 			}
 		}
-
 	}
 	
 	/**

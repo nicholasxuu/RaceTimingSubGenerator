@@ -2,6 +2,11 @@
 
 namespace Model\Event;
 
+/**
+ * Class RaceDriverLapResult
+ * @package Event
+ * Stores a driver's lap data for a race.
+ */
 class RaceDriverLapResult {
 	/** @var float[] */
 	public $lapTimeList;
