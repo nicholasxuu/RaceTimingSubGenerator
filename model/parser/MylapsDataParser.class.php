@@ -51,14 +51,14 @@ class MylapsDataParser {
 
 				if ($stage == "start") { // general info area
 					// check if there's minimum legal laptime setting, if so, setup member var
-					if (strpos($cleanLine, "MinimumLegalLaptime") === 0) {
+					if (mb_strpos($cleanLine, "MinimumLegalLaptime") === 0) {
 						$lineArr = explode("=", $cleanLine);
 						if (count($lineArr) > 1 && !empty($lineArr[1])) {
 							$this->minLegalLaptime = floatval($lineArr[1]);
 							continue;
 						}
 					}
-					if (strpos($cleanLine, "Pos") === 0) {
+					if (mb_strpos($cleanLine, "Pos") === 0) {
 						$stage = "general_info";
 						continue;
 					}
@@ -119,7 +119,7 @@ class MylapsDataParser {
 						continue;
 					} else {
 						$currracerId = intval($lineArr[1]);
-						if (preg_match('/[0-9]+/', $lineArr[5])) {
+						if (preg_match('/[0-9]+/u', $lineArr[5])) {
 							$laptime = Common\Globals::convertTimeToSeconds($lineArr[5]);
 						} else {
 							$laptime = Common\Globals::convertTimeToSeconds($lineArr[6]);

@@ -52,7 +52,7 @@ class RaceResult {
 	 */
 	function addDriver(RaceDriverData $rdd) {
 		$this->driverList[] = $rdd;
-		return array_pop(array_keys($this->driverList));
+		return count($this->driverList)-1;
 	}
 
 	/**

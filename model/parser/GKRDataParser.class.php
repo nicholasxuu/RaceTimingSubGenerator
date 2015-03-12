@@ -54,7 +54,7 @@ class GKRDataParser {
 					$currRaceDriverData->name = $cleanLine;
 					$stage = "top3racer_ln1";
 				} else if ($stage == "top3racer_ln1") {
-					$values = preg_split("/\s+/", $cleanLine);
+					$values = preg_split("/\s+/u", $cleanLine);
 					if (count($values) != 4) {
 						echo "Error, line value doesn't have 4 components:";
 						var_dump($values);
@@ -80,7 +80,7 @@ class GKRDataParser {
 					// it's fixed (hopefully), I don't care.
 					$stage = "restOfRacerContent";
 				} else if ($stage == "restOfRacerContent") {
-					$values = preg_split("/\t+/", $cleanLine);
+					$values = preg_split("/\t+/u", $cleanLine);
 					if (count($values) != 7) {
 						echo "Error, line value doesn't have 7 components:";
 						var_dump($values);
@@ -105,7 +105,7 @@ class GKRDataParser {
 					}
 					$stage = "lapTimeContent";
 				} else if ($stage == "lapTimeContent") {
-					$values = preg_split("/\s+/", $cleanLine);
+					$values = preg_split("/\s+/u", $cleanLine);
 
 					if (count($values) == 3) {
 						if ($this->raceResult->driverList[$currracerId]->lapData->isEmpty()) {

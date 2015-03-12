@@ -1,7 +1,7 @@
 <?php
 /**
- * parse NCH formatted result data file into RaceResult object
- * 
+ * parse RcLaps formatted result data file into RaceResult object
+ *
  * @author Nicholas Xu
  *
  */
@@ -10,11 +10,11 @@
 namespace Model\Parser;
 use Model\Event;
 
-class NCHDataParser
+class RcLapsDataParser
 {
 	/** @var Event\TotalResult */
 	public $totalResult;
-	
+
 	/** @var string[] */
 	public $fileContent;
 
@@ -75,7 +75,7 @@ class NCHDataParser
 			"Car#" 		=> "carNum",
 			"Behind" 	=> "behind",
 		);
-		
+
 		if (isset($raceDriverDataMapping[$input])) {
 			return $raceDriverDataMapping[$input];
 		} else {
@@ -88,19 +88,19 @@ class NCHDataParser
 	 * @param string[] $fileContent
 	 */
 	function __construct($fileContent) {
-		
+
 		$this->fileContent = $fileContent;
 		$this->totalResult = new Event\TotalResult();
 
 		$section = 0;
 		$driSectArr = array();
 		$lapSectArr = array();
-		$lapSectIndex = array(); 
+		$lapSectIndex = array();
 		$type2input = false;
 
 		$currRaceId = 0;
 		$finish_position = 0; // set variable
-		
+
 		// process input file content
 		foreach ($fileContent as $line)
 		{
@@ -108,33 +108,31 @@ class NCHDataParser
 			{
 				$originalLine = $line;
 				$line = trim($line);
-				if (mb_strstr($line, "Round#") !== false && mb_strstr($line, "Race#") !== false) // title
+				if (mb_strstr($line, "Race Results for") !== false) // race title
 				{
 					// start new race
 					$section = 0;
-					
-					$race_name_line_arr = preg_split("/[\s]{5,}/u", $line);
-					
-					$currRaceName = trim($race_name_line_arr[0]);
+
+					$currRaceName = str_replace("Race Results for ", "", $line);
 					//$total_data[$curr_race] = array();
 					$currRaceId = (string) $this->totalResult->addRace($currRaceName);
 				}
-				else if (preg_match('/.*Driver.*Car#.*Laps.*/u', $line))
+				else if (preg_match('/.*Position.*Laps.*/u', $line))
 				{
-					
+
 					$section = 1;
-					
+
 					$driSectArr = $this->get_driver_section_header_array($line);
-					
+
 					$finish_position = 1;
-					
+
 				}
-				else if (preg_match('/.*1\_.+2\_.+3\_.*/u', $line))
+				else if (preg_match('/Race Laptimes.*/u', $line))
 				{
 					$section = 2;
 
 					$lapSectArr = $this->get_lap_section_header_array($originalLine);
-					
+
 					$lapSectIndex = $this->get_lap_section_index($originalLine);
 				}
 				else if ($section === 2 && preg_match('/----/u', $line))
@@ -147,7 +145,7 @@ class NCHDataParser
 					$i = 1;
 					$name = true;
 					$currData = new Event\RaceDriverData();
-					
+
 					$driverName = "";
 					foreach ($elementArr as $e)
 					{
@@ -159,16 +157,16 @@ class NCHDataParser
 						else
 						{
 							$name = false;
-							
+
 							$mapped = $this->getRaceDriverDataMapping($driSectArr[$i]);
 							if (!empty($mapped)) {
 								$currData->$mapped = $e;
 							}
-							
+
 							$i++;
-						}	
+						}
 					}
-					
+
 					$currData->name = trim($driverName);
 					$currData->carNum = str_replace("#", "", $currData->carNum);
 					$currData->finishPosition = $finish_position;
@@ -210,9 +208,9 @@ class NCHDataParser
 					$section = 4; // 4 means end of one race
 				}
 			}
-			
+
 		}
-		
+
 		foreach($this->totalResult->raceResultList as $currRaceId => $result) {
 			$this->totalResult->raceResultList[$currRaceId]->cleanUpDriver();
 		}

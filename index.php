@@ -9,8 +9,8 @@
 spl_autoload_extensions( '.php , .class.php' );
 function my_autoload($class) {
 	$classSepIndex = strrpos($class, "\\");
-	$classPath = str_replace("\\", "/", strtolower(substr($class, 0, $classSepIndex)));
-	$className = substr($class, $classSepIndex + 1);
+	$classPath = str_replace("\\", "/", mb_strtolower(substr($class, 0, $classSepIndex)));
+	$className = mb_substr($class, $classSepIndex + 1);
 
 	if (file_exists(dirname(__FILE__) . "/" . $classPath . "/" . $className . ".class.php")) {
 		include_once(dirname(__FILE__) . "/" . $classPath . "/" . $className . ".class.php");

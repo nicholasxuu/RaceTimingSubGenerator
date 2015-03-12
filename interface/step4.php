@@ -20,7 +20,7 @@ if (!isset($content) || empty($content)) {
 	exit;
 }
 
-$file = preg_split("/(\r|\n|\r\n)/", $content);
+$file = preg_split("/(\r|\n|\r\n)/u", $content);
 if ($_POST['input_origin'] == "RCScoringPro") {
 	$parser = new Model\Parser\NCHDataParser($file);
 } else if ($_POST['input_origin'] == "MyLaps") {
@@ -39,7 +39,7 @@ $driverId = $uid;
 $ts->setStartTime($uid, $crossTime);
 $ctd = new Model\Subtitle\CountDown($ts->getRaceTime(), $ts->getStartTime());
 
-$outputFilename = preg_replace("/\s+/", ".", $parser->totalResult->raceResultList[$rid]->name);
+$outputFilename = preg_replace("/\s+/u", ".", $parser->totalResult->raceResultList[$rid]->name);
 
 
 header('Content-type: application/text');

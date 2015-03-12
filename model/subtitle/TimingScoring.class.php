@@ -2,6 +2,7 @@
 
 namespace Model\Subtitle;
 use Model\Event;
+use Model\Timing;
 
 class TimingScoring {
 	/** @var Event\RaceResult */
@@ -61,8 +62,8 @@ class TimingScoring {
 				$headerString = "Pos Name               LastLap Lap# Behind\N";
 				
 				// driver info
-				$ctrd = new Event\CurrTimeRaceData($currTime, $this->raceResult);
-				foreach ($ctrd->currTimeDriverDataArr as $ctdd) { /* @var $ctdd Event\CurrTimeDriverData */
+				$ctrd = new Timing\CurrTimeRaceData($currTime, $this->raceResult);
+				foreach ($ctrd->currTimeDriverDataArr as $ctdd) { /* @var $ctdd Timing\CurrTimeDriverData */
 
 					if (!empty($ctdd->lapNo)) {
 
@@ -90,9 +91,9 @@ class TimingScoring {
 				$headerString = "Pos Name               LastLap Lap# RaceTime  Behind FastLap Consistency\N";
 				
 				// driver info
-				$ctrd = new Event\CurrTimeRaceData($currTime, $this->raceResult);
+				$ctrd = new Timing\CurrTimeRaceData($currTime, $this->raceResult);
 				//var_dump($ctrd->currTimeDriverDataArr);
-				foreach ($ctrd->currTimeDriverDataArr as $ctdd) { /* @var $ctdd Event\CurrTimeDriverData */
+				foreach ($ctrd->currTimeDriverDataArr as $ctdd) { /* @var $ctdd Timing\CurrTimeDriverData */
 					
 					//var_dump($ctdd);
 					if (!empty($ctdd->lapNo)) {
@@ -193,9 +194,9 @@ class TimingScoring {
 				$racewinner = $this->raceResult->driverList[0];
 				if (isset($racewinner->totalTime) && !empty($racewinner->totalTime)) {
 					$winnerTime = $racewinner->totalTime;
-					if (strpos($winnerTime, ":") !== false) {
+					if (mb_strpos($winnerTime, ":") !== false) {
 						// warning: only accept up to minutes
-						$minutes = intval(strstr($winnerTime, ":", true));
+						$minutes = intval(mb_strstr($winnerTime, ":", true));
 						$this->raceTime = $minutes;
 					}
 				}
@@ -225,16 +226,16 @@ class TimingScoring {
 			$str = strval($str);
 		}
 		
-		if (strlen($str) > $len) {
+		if (mb_strlen($str) > $len) {
 			if ($overLength == '...') {
-				$str = substr($str, 0, $len-3) . "...";
+				$str = mb_substr($str, 0, $len-3) . "...";
 			} else if ($overLength == "cut") {
-				$str = substr($str, 0, $len);
+				$str = mb_substr($str, 0, $len);
 			}
 		}
 		
 		$whiteStr = "";
-		for ($i = 0; $i < $len - strlen($str); $i++) {
+		for ($i = 0; $i < $len - mb_strlen($str); $i++) {
 			$whiteStr .= " ";
 		}
 		

@@ -19,11 +19,11 @@ class Globals {
 	 * @return bool
 	 */
 	public static function searchQuery($string, $query) {
-		$string = strtolower($string);
-		$query = strtolower($query);
+		$string = mb_strtolower($string);
+		$query = mb_strtolower($query);
 		$queryArr = explode(" ", $query);
 		foreach ($queryArr as $component) {
-			if (strstr($string, $component) === false) {
+			if (mb_strstr($string, $component) === false) {
 				return false;
 			}
 		}
@@ -31,12 +31,12 @@ class Globals {
 	}
 
 	public static function convertTimeToSeconds($string) {
-		if (!preg_match('/[0-9]+/', $string)) {
+		if (!preg_match('/[0-9]+/u', $string)) {
 			return false;
 		}
-		if (preg_match('/^[0-9]+\.[0-9]+$/', $string) || preg_match('/^[0-9]+$/', $string)) {
+		if (preg_match('/^[0-9]+\.[0-9]+$/u', $string) || preg_match('/^[0-9]+$/u', $string)) {
 			return floatval($string);
-		} else if (preg_match('/^[0-9]+\:[0-9]+\.[0-9]+$/', $string)) {
+		} else if (preg_match('/^[0-9]+\:[0-9]+\.[0-9]+$/u', $string)) {
 			$strArr = explode(":", $string);
 			return floatval($strArr[0]) * 60 + floatval($strArr[1]);
 		}
@@ -45,12 +45,12 @@ class Globals {
 
 	public static function startsWith($haystack, $needle)
 	{
-		return $needle === "" || strpos($haystack, $needle) === 0;
+		return $needle === "" || mb_strpos($haystack, $needle) === 0;
 	}
 
 	public static function endsWith($haystack, $needle)
 	{
-		return $needle === "" || substr($haystack, -strlen($needle)) === $needle;
+		return $needle === "" || mb_substr($haystack, -mb_strlen($needle)) === $needle;
 	}
 
 } 

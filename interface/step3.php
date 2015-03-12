@@ -18,7 +18,7 @@ if (!isset($content) || empty($content)) {
 	exit;
 }
 
-$file = preg_split("/(\r|\n|\r\n)/", $content);
+$file = preg_split("/(\r|\n|\r\n)/u", $content);
 if ($_POST['input_origin'] == "RCScoringPro") {
 	$parser = new Model\Parser\NCHDataParser($file);
 } else if ($_POST['input_origin'] == "MyLaps") {
