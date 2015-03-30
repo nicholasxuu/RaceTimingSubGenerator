@@ -79,7 +79,6 @@ class TimingScoring {
 							$contentFlashString .= "{$this_pos} {$this_name} {$this_lastlap} {$this_lapNo} {$this_behind}\N";
 						}
 
-
 						$contentString .= "{$this_pos} {$this_name} {$this_lastlap} {$this_lapNo} {$this_behind}\N";
 					}
 				}
@@ -97,19 +96,27 @@ class TimingScoring {
 					
 					//var_dump($ctdd);
 					if (!empty($ctdd->lapNo)) {
-
-					
 						$this_did = $this->raceResult->getIdByName($ctdd->name);
 
 						$this_pos = $this->makeLengthString($ctdd->pos, 3, "right");
 						$this_name = $this->makeLengthString($ctdd->name, 18, "left");
 						$this_lastlap = $this->makeLengthString($ctdd->lastLap, 7, "right", "cut");
 						$this_lapNo = $this->makeLengthString($ctdd->lapNo, 4, "right");
-						$this_behind = $this->makeLengthString($this->raceResult->driverList[$this_did]->behind, 6, "left", "cut");
 
-						$this_racetime = $this->makeLengthString($this->raceResult->driverList[$this_did]->totalTime, 9, "right", "cut");
-						$this_fastlap = $this->makeLengthString($this->raceResult->driverList[$this_did]->lapData->getBestlap(true), 7, "right", "cut");
-						$this_consistency = $this->makeLengthString($this->raceResult->driverList[$this_did]->lapData->getConsistency(true), 11, "left", "cut");
+						// check if current car is finishing its last lap, if not, put some fields with empty string.
+						if ($ctdd->lapNo >= $this->raceResult->driverList[$this_did]->lapData->getLapCount()) {
+
+							$this_behind = $this->makeLengthString($this->raceResult->driverList[$this_did]->behind, 6, "left", "cut");
+
+							$this_racetime = $this->makeLengthString($this->raceResult->driverList[$this_did]->totalTime, 9, "right", "cut");
+							$this_fastlap = $this->makeLengthString($this->raceResult->driverList[$this_did]->lapData->getBestlap(true), 7, "right", "cut");
+							$this_consistency = $this->makeLengthString($this->raceResult->driverList[$this_did]->lapData->getConsistency(true), 11, "left", "cut");
+						} else {
+							$this_behind = $this->makeLengthString(($ctdd->behind == 0 ? "" : $ctdd->behind), 6, "left", "cut");
+							$this_racetime = $this->makeLengthString("", 9, "right", "cut");
+							$this_fastlap = $this->makeLengthString("", 7, "right", "cut");
+							$this_consistency = $this->makeLengthString("", 11, "left", "cut");
+						}
 
 						if ($this_did == $did) {
 							$contentFlashString .= "_\N";

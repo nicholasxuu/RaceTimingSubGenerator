@@ -1,4 +1,7 @@
 <?php
+
+// [WIP] not yet finished. Won't run correctly yet.
+
 /**
  * parse RcLaps formatted result data file into RaceResult object
  *
@@ -92,7 +95,7 @@ class RcLapsDataParser
 		$this->fileContent = $fileContent;
 		$this->totalResult = new Event\TotalResult();
 
-		$section = 0;
+		$section = "start";
 		$driSectArr = array();
 		$lapSectArr = array();
 		$lapSectIndex = array();
@@ -104,14 +107,25 @@ class RcLapsDataParser
 		// process input file content
 		foreach ($fileContent as $line)
 		{
-			if (trim($line) != "" || $section === 2)
+			if (trim($line) != "")
+			{
+				$originalLine = $line;
+				$line = trim($line);
+
+				if (mb_strstr($line, "Race Results for") !== false)
+				{
+
+				}
+			}
+
+			if (trim($line) != "" || $section === "lap_results")
 			{
 				$originalLine = $line;
 				$line = trim($line);
 				if (mb_strstr($line, "Race Results for") !== false) // race title
 				{
 					// start new race
-					$section = 0;
+					$section = "start";
 
 					$currRaceName = str_replace("Race Results for ", "", $line);
 					//$total_data[$curr_race] = array();
@@ -120,7 +134,7 @@ class RcLapsDataParser
 				else if (preg_match('/.*Position.*Laps.*/u', $line))
 				{
 
-					$section = 1;
+					$section = "race_results_start";
 
 					$driSectArr = $this->get_driver_section_header_array($line);
 
@@ -129,17 +143,17 @@ class RcLapsDataParser
 				}
 				else if (preg_match('/Race Laptimes.*/u', $line))
 				{
-					$section = 2;
+					$section = "lap_results";
 
 					$lapSectArr = $this->get_lap_section_header_array($originalLine);
 
 					$lapSectIndex = $this->get_lap_section_index($originalLine);
 				}
-				else if ($section === 2 && preg_match('/----/u', $line))
+				else if ($section === "lap_results" && preg_match('/----/u', $line))
 				{
-					$section = 3;
+					$section = "race_end";
 				}
-				else if ($section === 1)
+				else if ($section === "race_results_start")
 				{
 					$elementArr = preg_split('/\s+/u', $line);
 					$i = 1;
@@ -173,7 +187,7 @@ class RcLapsDataParser
 					$finish_position++;
 					$this->totalResult->$currRaceId->addDriver($currData);
 				}
-				else if ($section === 2)
+				else if ($section === "lap_results")
 				{
 					if (empty($line)) {
 						$type2input = true;
@@ -194,7 +208,7 @@ class RcLapsDataParser
 						}
 					}
 				}
-				else if ($section === 3)
+				else if ($section === "race_end")
 				{
 					// when new race starts, finish last race first
 					if ($type2input) { // if it's second type of input, need to remove un-needed lines of data
@@ -205,7 +219,7 @@ class RcLapsDataParser
 						}
 					}
 
-					$section = 4; // 4 means end of one race
+					$section = "end"; // 4 means end of one race
 				}
 			}
 
