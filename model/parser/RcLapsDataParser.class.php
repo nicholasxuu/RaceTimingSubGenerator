@@ -92,7 +92,7 @@ class RcLapsDataParser
 		$this->fileContent = $fileContent;
 		$this->totalResult = new Event\TotalResult();
 
-		$section = 0;
+		$section = "start";
 		$driSectArr = array();
 		$lapSectArr = array();
 		$lapSectIndex = array();
@@ -111,7 +111,7 @@ class RcLapsDataParser
 				if (mb_strstr($line, "Race Results for") !== false) // race title
 				{
 					// start new race
-					$section = 0;
+					$section = "start";
 
 					$currRaceName = str_replace("Race Results for ", "", $line);
 					//$total_data[$curr_race] = array();
@@ -120,12 +120,9 @@ class RcLapsDataParser
 				else if (preg_match('/.*Position.*Laps.*/u', $line))
 				{
 
-					$section = 1;
-
-					$driSectArr = $this->get_driver_section_header_array($line);
+					$section = "race_result_header";
 
 					$finish_position = 1;
-
 				}
 				else if (preg_match('/Race Laptimes.*/u', $line))
 				{
@@ -134,6 +131,10 @@ class RcLapsDataParser
 					$lapSectArr = $this->get_lap_section_header_array($originalLine);
 
 					$lapSectIndex = $this->get_lap_section_index($originalLine);
+				}
+				else if ($section === "race_result_header") {
+
+					$driSectArr = $this->get_driver_section_header_array($line);
 				}
 				else if ($section === 2 && preg_match('/----/u', $line))
 				{
