@@ -1,0 +1,458 @@
+[Script Info]
+; This is a Sub Station Alpha v4 script.
+; For Sub Station Alpha info and downloads,
+; go to http://www.eswat.demon.co.uk/
+Title: Neon Genesis Evangelion - Episode 26 (neutral Spanish)
+Original Script: 
+Script Updated By: version 2.8.01
+ScriptType: v4.00
+Collisions: Normal
+PlayResX: 1920
+PlayResY: 1080
+PlayDepth: 0
+Timer: 100,0000
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: DefaultVCD,Segoe UI Mono,35,&H33FFFFFF,&H00B4FCFC,&H01000008,&H80000008,-1,0,0,0,100,100,0,0,1,1,0,9,5,5,5,0
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:04.37,0:00:04.47,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N_\N
+Dialogue: 0,0:00:04.47,0:00:04.67,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       1.313    1       \N
+Dialogue: 0,0:00:04.67,0:00:04.77,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       1.313    1       \N_\N
+Dialogue: 0,0:00:04.77,0:00:05.02,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       1.313    1       \N  2 Kuikahi, Kealoha     1.612    1 0.299 \N
+Dialogue: 0,0:00:05.02,0:00:05.12,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       1.313    1       \N  2 Kuikahi, Kealoha     1.612    1 0.299 \N_\N
+Dialogue: 0,0:00:05.12,0:00:05.43,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       1.313    1       \N  2 Kuikahi, Kealoha     1.612    1 0.299 \N  3 Xu, Nicholas          1.96    1 0.348 \N
+Dialogue: 0,0:00:05.43,0:00:05.53,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       1.313    1       \N  2 Kuikahi, Kealoha     1.612    1 0.299 \N  3 Xu, Nicholas          1.96    1 0.348 \N_\N
+Dialogue: 0,0:00:05.53,0:00:21.52,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       1.313    1       \N  2 Kuikahi, Kealoha     1.612    1 0.299 \N  3 Xu, Nicholas          1.96    1 0.348 \N  4 Hernandez, Junior     2.37    1 0.41  \N
+Dialogue: 0,0:00:21.52,0:00:21.62,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N_\N  2 Kuikahi, Kealoha     1.612    1       \N  3 Xu, Nicholas          1.96    1 0.348 \N  4 Hernandez, Junior     2.37    1 0.41  \N
+Dialogue: 0,0:00:21.62,0:00:22.81,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       17.15    2       \N  2 Kuikahi, Kealoha     1.612    1       \N  3 Xu, Nicholas          1.96    1 0.348 \N  4 Hernandez, Junior     2.37    1 0.41  \N
+Dialogue: 0,0:00:22.81,0:00:22.91,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       17.15    2       \N_\N  3 Xu, Nicholas          1.96    1       \N  4 Hernandez, Junior     2.37    1 0.41  \N
+Dialogue: 0,0:00:22.91,0:00:24.86,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       17.15    2       \N  2 Kuikahi, Kealoha     18.14    2 1.289 \N  3 Xu, Nicholas          1.96    1       \N  4 Hernandez, Junior     2.37    1 0.41  \N
+Dialogue: 0,0:00:24.86,0:00:24.96,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       17.15    2       \N  2 Kuikahi, Kealoha     18.14    2 1.289 \N_\N  4 Xu, Nicholas          1.96    1       \N
+Dialogue: 0,0:00:24.96,0:00:27.10,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       17.15    2       \N  2 Kuikahi, Kealoha     18.14    2 1.289 \N  3 Hernandez, Junior    19.43    2 2.048 \N  4 Xu, Nicholas          1.96    1       \N
+Dialogue: 0,0:00:27.10,0:00:27.20,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       17.15    2       \N  2 Kuikahi, Kealoha     18.14    2 1.289 \N  3 Hernandez, Junior    19.43    2 2.048 \N_\N
+Dialogue: 0,0:00:27.20,0:00:42.05,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       17.15    2       \N  2 Kuikahi, Kealoha     18.14    2 1.289 \N  3 Hernandez, Junior    19.43    2 2.048 \N  4 Xu, Nicholas         22.08    2 2.24  \N
+Dialogue: 0,0:00:42.05,0:00:42.15,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N_\N  2 Kuikahi, Kealoha     18.14    2       \N  3 Hernandez, Junior    19.43    2 2.048 \N  4 Xu, Nicholas         22.08    2 2.24  \N
+Dialogue: 0,0:00:42.15,0:00:42.72,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       20.53    3       \N  2 Kuikahi, Kealoha     18.14    2       \N  3 Hernandez, Junior    19.43    2 2.048 \N  4 Xu, Nicholas         22.08    2 2.24  \N
+Dialogue: 0,0:00:42.72,0:00:42.82,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       20.53    3       \N_\N  3 Hernandez, Junior    19.43    2       \N  4 Xu, Nicholas         22.08    2 2.24  \N
+Dialogue: 0,0:00:42.82,0:00:44.94,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       20.53    3       \N  2 Kuikahi, Kealoha     19.91    3 0.669 \N  3 Hernandez, Junior    19.43    2       \N  4 Xu, Nicholas         22.08    2 2.24  \N
+Dialogue: 0,0:00:44.94,0:00:45.04,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       20.53    3       \N  2 Kuikahi, Kealoha     19.91    3 0.669 \N_\N  4 Xu, Nicholas         22.08    2       \N
+Dialogue: 0,0:00:45.04,0:00:46.87,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       20.53    3       \N  2 Kuikahi, Kealoha     19.91    3 0.669 \N  3 Hernandez, Junior    20.08    3 2.218 \N  4 Xu, Nicholas         22.08    2       \N
+Dialogue: 0,0:00:46.87,0:00:46.97,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       20.53    3       \N  2 Kuikahi, Kealoha     19.91    3 0.669 \N  3 Hernandez, Junior    20.08    3 2.218 \N_\N
+Dialogue: 0,0:00:46.97,0:01:00.51,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       20.53    3       \N  2 Kuikahi, Kealoha     19.91    3 0.669 \N  3 Hernandez, Junior    20.08    3 2.218 \N  4 Xu, Nicholas         19.77    3 1.93  \N
+Dialogue: 0,0:01:00.51,0:01:00.61,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N_\N  2 Hemenway, Dave       20.53    3       \N  3 Hernandez, Junior    20.08    3 2.887 \N  4 Xu, Nicholas         19.77    3 1.93  \N
+Dialogue: 0,0:01:00.61,0:01:00.66,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Kuikahi, Kealoha     17.79    4       \N  2 Hemenway, Dave       20.53    3       \N  3 Hernandez, Junior    20.08    3 2.887 \N  4 Xu, Nicholas         19.77    3 1.93  \N
+Dialogue: 0,0:01:00.66,0:01:00.76,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Kuikahi, Kealoha     17.79    4       \N_\N  3 Hernandez, Junior    20.08    3       \N  4 Xu, Nicholas         19.77    3 1.93  \N
+Dialogue: 0,0:01:00.76,0:01:03.45,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Kuikahi, Kealoha     17.79    4       \N  2 Hemenway, Dave       18.61    4 0.151 \N  3 Hernandez, Junior    20.08    3       \N  4 Xu, Nicholas         19.77    3 1.93  \N
+Dialogue: 0,0:01:03.45,0:01:03.55,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Kuikahi, Kealoha     17.79    4       \N  2 Hemenway, Dave       18.61    4 0.151 \N_\N  4 Xu, Nicholas         19.77    3       \N
+Dialogue: 0,0:01:03.55,0:01:04.93,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Kuikahi, Kealoha     17.79    4       \N  2 Hemenway, Dave       18.61    4 0.151 \N  3 Hernandez, Junior    18.51    4 2.787 \N  4 Xu, Nicholas         19.77    3       \N
+Dialogue: 0,0:01:04.93,0:01:05.03,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Kuikahi, Kealoha     17.79    4       \N  2 Hemenway, Dave       18.61    4 0.151 \N  3 Hernandez, Junior    18.51    4 2.787 \N_\N
+Dialogue: 0,0:01:05.03,0:01:18.47,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Kuikahi, Kealoha     17.79    4       \N  2 Hemenway, Dave       18.61    4 0.151 \N  3 Hernandez, Junior    18.51    4 2.787 \N  4 Xu, Nicholas         18.06    4 1.48  \N
+Dialogue: 0,0:01:18.47,0:01:18.57,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N_\N  2 Kuikahi, Kealoha     17.79    4       \N  3 Hernandez, Junior    18.51    4 2.938 \N  4 Xu, Nicholas         18.06    4 1.48  \N
+Dialogue: 0,0:01:18.57,0:01:18.65,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       17.81    5       \N  2 Kuikahi, Kealoha     17.79    4       \N  3 Hernandez, Junior    18.51    4 2.938 \N  4 Xu, Nicholas         18.06    4 1.48  \N
+Dialogue: 0,0:01:18.65,0:01:18.75,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       17.81    5       \N_\N  3 Hernandez, Junior    18.51    4       \N  4 Xu, Nicholas         18.06    4 1.48  \N
+Dialogue: 0,0:01:18.75,0:01:22.33,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       17.81    5       \N  2 Kuikahi, Kealoha     18.14    5 0.179 \N  3 Hernandez, Junior    18.51    4       \N  4 Xu, Nicholas         18.06    4 1.48  \N
+Dialogue: 0,0:01:22.33,0:01:22.43,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       17.81    5       \N  2 Kuikahi, Kealoha     18.14    5 0.179 \N_\N  4 Xu, Nicholas         18.06    4       \N
+Dialogue: 0,0:01:22.43,0:01:24.15,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       17.81    5       \N  2 Kuikahi, Kealoha     18.14    5 0.179 \N  3 Hernandez, Junior    18.88    5 3.678 \N  4 Xu, Nicholas         18.06    4       \N
+Dialogue: 0,0:01:24.15,0:01:24.25,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       17.81    5       \N  2 Kuikahi, Kealoha     18.14    5 0.179 \N  3 Hernandez, Junior    18.88    5 3.678 \N_\N
+Dialogue: 0,0:01:24.25,0:01:38.18,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       17.81    5       \N  2 Kuikahi, Kealoha     18.14    5 0.179 \N  3 Hernandez, Junior    18.88    5 3.678 \N  4 Xu, Nicholas         19.22    5 1.82  \N
+Dialogue: 0,0:01:38.18,0:01:38.28,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N_\N  2 Kuikahi, Kealoha     18.14    5       \N  3 Hernandez, Junior    18.88    5 3.678 \N  4 Xu, Nicholas         19.22    5 1.82  \N
+Dialogue: 0,0:01:38.28,0:01:38.93,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       19.71    6       \N  2 Kuikahi, Kealoha     18.14    5       \N  3 Hernandez, Junior    18.88    5 3.678 \N  4 Xu, Nicholas         19.22    5 1.82  \N
+Dialogue: 0,0:01:38.93,0:01:39.03,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       19.71    6       \N_\N  3 Hernandez, Junior    18.88    5       \N  4 Xu, Nicholas         19.22    5 1.82  \N
+Dialogue: 0,0:01:39.03,0:01:41.70,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       19.71    6       \N  2 Kuikahi, Kealoha     20.28    6 0.749 \N  3 Hernandez, Junior    18.88    5       \N  4 Xu, Nicholas         19.22    5 1.82  \N
+Dialogue: 0,0:01:41.70,0:01:41.80,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       19.71    6       \N  2 Kuikahi, Kealoha     20.28    6 0.749 \N_\N  4 Xu, Nicholas         19.22    5       \N
+Dialogue: 0,0:01:41.80,0:01:42.75,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       19.71    6       \N  2 Kuikahi, Kealoha     20.28    6 0.749 \N  3 Hernandez, Junior    19.37    6 2.768 \N  4 Xu, Nicholas         19.22    5       \N
+Dialogue: 0,0:01:42.75,0:01:42.85,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       19.71    6       \N  2 Kuikahi, Kealoha     20.28    6 0.749 \N  3 Hernandez, Junior    19.37    6 2.768 \N_\N
+Dialogue: 0,0:01:42.85,0:01:55.48,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       19.71    6       \N  2 Kuikahi, Kealoha     20.28    6 0.749 \N  3 Hernandez, Junior    19.37    6 2.768 \N  4 Xu, Nicholas          18.6    6 1.05  \N
+Dialogue: 0,0:01:55.48,0:01:55.58,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N_\N  2 Kuikahi, Kealoha     20.28    6       \N  3 Hernandez, Junior    19.37    6 2.768 \N  4 Xu, Nicholas          18.6    6 1.05  \N
+Dialogue: 0,0:01:55.58,0:01:56.59,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave        17.3    7       \N  2 Kuikahi, Kealoha     20.28    6       \N  3 Hernandez, Junior    19.37    6 2.768 \N  4 Xu, Nicholas          18.6    6 1.05  \N
+Dialogue: 0,0:01:56.59,0:01:56.69,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave        17.3    7       \N_\N  3 Hernandez, Junior    19.37    6       \N  4 Xu, Nicholas          18.6    6 1.05  \N
+Dialogue: 0,0:01:56.69,0:01:59.52,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave        17.3    7       \N  2 Kuikahi, Kealoha     17.66    7 1.109 \N  3 Hernandez, Junior    19.37    6       \N  4 Xu, Nicholas          18.6    6 1.05  \N
+Dialogue: 0,0:01:59.52,0:01:59.62,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave        17.3    7       \N  2 Kuikahi, Kealoha     17.66    7 1.109 \N_\N  4 Xu, Nicholas          18.6    6       \N
+Dialogue: 0,0:01:59.62,0:02:01.32,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave        17.3    7       \N  2 Kuikahi, Kealoha     17.66    7 1.109 \N  3 Hernandez, Junior    17.82    7 2.928 \N  4 Xu, Nicholas          18.6    6       \N
+Dialogue: 0,0:02:01.32,0:02:01.42,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave        17.3    7       \N  2 Kuikahi, Kealoha     17.66    7 1.109 \N  3 Hernandez, Junior    17.82    7 2.928 \N_\N
+Dialogue: 0,0:02:01.42,0:02:13.72,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave        17.3    7       \N  2 Kuikahi, Kealoha     17.66    7 1.109 \N  3 Hernandez, Junior    17.82    7 2.928 \N  4 Xu, Nicholas         18.57    7 1.8   \N
+Dialogue: 0,0:02:13.72,0:02:13.82,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N_\N  2 Kuikahi, Kealoha     17.66    7       \N  3 Hernandez, Junior    17.82    7 2.928 \N  4 Xu, Nicholas         18.57    7 1.8   \N
+Dialogue: 0,0:02:13.82,0:02:15.98,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       18.24    8       \N  2 Kuikahi, Kealoha     17.66    7       \N  3 Hernandez, Junior    17.82    7 2.928 \N  4 Xu, Nicholas         18.57    7 1.8   \N
+Dialogue: 0,0:02:15.98,0:02:16.08,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       18.24    8       \N_\N  3 Hernandez, Junior    17.82    7       \N  4 Xu, Nicholas         18.57    7 1.8   \N
+Dialogue: 0,0:02:16.08,0:02:17.67,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       18.24    8       \N  2 Kuikahi, Kealoha     19.39    8 2.259 \N  3 Hernandez, Junior    17.82    7       \N  4 Xu, Nicholas         18.57    7 1.8   \N
+Dialogue: 0,0:02:17.67,0:02:17.77,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       18.24    8       \N  2 Kuikahi, Kealoha     19.39    8 2.259 \N_\N  4 Xu, Nicholas         18.57    7       \N
+Dialogue: 0,0:02:17.77,0:02:20.63,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       18.24    8       \N  2 Kuikahi, Kealoha     19.39    8 2.259 \N  3 Hernandez, Junior    18.15    8 1.688 \N  4 Xu, Nicholas         18.57    7       \N
+Dialogue: 0,0:02:20.63,0:02:20.73,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       18.24    8       \N  2 Kuikahi, Kealoha     19.39    8 2.259 \N  3 Hernandez, Junior    18.15    8 1.688 \N_\N
+Dialogue: 0,0:02:20.73,0:02:31.22,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       18.24    8       \N  2 Kuikahi, Kealoha     19.39    8 2.259 \N  3 Hernandez, Junior    18.15    8 1.688 \N  4 Xu, Nicholas         19.31    8 2.96  \N
+Dialogue: 0,0:02:31.22,0:02:31.32,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N_\N  2 Kuikahi, Kealoha     19.39    8       \N  3 Hernandez, Junior    18.15    8 1.688 \N  4 Xu, Nicholas         19.31    8 2.96  \N
+Dialogue: 0,0:02:31.32,0:02:38.05,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave        17.5    9       \N  2 Kuikahi, Kealoha     19.39    8       \N  3 Hernandez, Junior    18.15    8 1.688 \N  4 Xu, Nicholas         19.31    8 2.96  \N
+Dialogue: 0,0:02:38.05,0:02:38.15,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave        17.5    9       \N_\N  3 Kuikahi, Kealoha     19.39    8       \N  4 Xu, Nicholas         19.31    8 4.648 \N
+Dialogue: 0,0:02:38.15,0:02:39.56,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave        17.5    9       \N  2 Hernandez, Junior    20.38    9 6.827 \N  3 Kuikahi, Kealoha     19.39    8       \N  4 Xu, Nicholas         19.31    8 4.648 \N
+Dialogue: 0,0:02:39.56,0:02:39.66,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave        17.5    9       \N  2 Hernandez, Junior    20.38    9 6.827 \N_\N  4 Xu, Nicholas         19.31    8       \N
+Dialogue: 0,0:02:39.66,0:02:45.43,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave        17.5    9       \N  2 Hernandez, Junior    20.38    9 6.827 \N  3 Kuikahi, Kealoha     23.58    9 1.512 \N  4 Xu, Nicholas         19.31    8       \N
+Dialogue: 0,0:02:45.43,0:02:45.53,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave        17.5    9       \N  2 Hernandez, Junior    20.38    9 6.827 \N  3 Kuikahi, Kealoha     23.58    9 1.512 \N_\N
+Dialogue: 0,0:02:45.53,0:02:50.35,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave        17.5    9       \N  2 Hernandez, Junior    20.38    9 6.827 \N  3 Kuikahi, Kealoha     23.58    9 1.512 \N  4 Xu, Nicholas          24.8    9 5.868 \N
+Dialogue: 0,0:02:50.35,0:02:50.45,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N_\N  2 Hernandez, Junior    20.38    9       \N  3 Kuikahi, Kealoha     23.58    9 1.512 \N  4 Xu, Nicholas          24.8    9 5.868 \N
+Dialogue: 0,0:02:50.45,0:02:56.36,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       19.13   10       \N  2 Hernandez, Junior    20.38    9       \N  3 Kuikahi, Kealoha     23.58    9 1.512 \N  4 Xu, Nicholas          24.8    9 5.868 \N
+Dialogue: 0,0:02:56.36,0:02:56.46,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       19.13   10       \N_\N  3 Kuikahi, Kealoha     23.58    9       \N  4 Xu, Nicholas          24.8    9 5.868 \N
+Dialogue: 0,0:02:56.46,0:02:57.11,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       19.13   10       \N  2 Hernandez, Junior    18.31   10 6.007 \N  3 Kuikahi, Kealoha     23.58    9       \N  4 Xu, Nicholas          24.8    9 5.868 \N
+Dialogue: 0,0:02:57.11,0:02:57.21,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       19.13   10       \N  2 Hernandez, Junior    18.31   10 6.007 \N_\N  4 Xu, Nicholas          24.8    9       \N
+Dialogue: 0,0:02:57.21,0:03:06.53,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       19.13   10       \N  2 Hernandez, Junior    18.31   10 6.007 \N  3 Kuikahi, Kealoha     17.55   10 0.752 \N  4 Xu, Nicholas          24.8    9       \N
+Dialogue: 0,0:03:06.53,0:03:06.63,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       19.13   10       \N  2 Hernandez, Junior    18.31   10 6.007 \N  3 Kuikahi, Kealoha     17.55   10 0.752 \N_\N
+Dialogue: 0,0:03:06.63,0:03:08.65,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       19.13   10       \N  2 Hernandez, Junior    18.31   10 6.007 \N  3 Kuikahi, Kealoha     17.55   10 0.752 \N  4 Xu, Nicholas          21.1   10 9.418 \N
+Dialogue: 0,0:03:08.65,0:03:08.75,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N_\N  2 Hernandez, Junior    18.31   10       \N  3 Kuikahi, Kealoha     17.55   10 0.752 \N  4 Xu, Nicholas          21.1   10 9.418 \N
+Dialogue: 0,0:03:08.75,0:03:14.67,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave        18.3   11       \N  2 Hernandez, Junior    18.31   10       \N  3 Kuikahi, Kealoha     17.55   10 0.752 \N  4 Xu, Nicholas          21.1   10 9.418 \N
+Dialogue: 0,0:03:14.67,0:03:14.77,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave        18.3   11       \N_\N  3 Hernandez, Junior    18.31   10       \N  4 Xu, Nicholas          21.1   10 10.17 \N
+Dialogue: 0,0:03:14.77,0:03:21.82,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave        18.3   11       \N  2 Kuikahi, Kealoha     17.56   11 6.019 \N  3 Hernandez, Junior    18.31   10       \N  4 Xu, Nicholas          21.1   10 10.17 \N
+Dialogue: 0,0:03:21.82,0:03:21.92,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave        18.3   11       \N  2 Kuikahi, Kealoha     17.56   11 6.019 \N_\N  4 Xu, Nicholas          21.1   10       \N
+Dialogue: 0,0:03:21.92,0:03:25.65,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave        18.3   11       \N  2 Kuikahi, Kealoha     17.56   11 6.019 \N  3 Hernandez, Junior    25.46   11 7.148 \N  4 Xu, Nicholas          21.1   10       \N
+Dialogue: 0,0:03:25.65,0:03:25.75,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave        18.3   11       \N  2 Kuikahi, Kealoha     17.56   11 6.019 \N  3 Hernandez, Junior    25.46   11 7.148 \N_\N
+Dialogue: 0,0:03:25.75,0:03:26.36,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave        18.3   11       \N  2 Kuikahi, Kealoha     17.56   11 6.019 \N  3 Hernandez, Junior    25.46   11 7.148 \N  4 Xu, Nicholas         19.12   11 3.83  \N
+Dialogue: 0,0:03:26.36,0:03:26.46,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N_\N  2 Kuikahi, Kealoha     17.56   11       \N  3 Hernandez, Junior    25.46   11 7.148 \N  4 Xu, Nicholas         19.12   11 3.83  \N
+Dialogue: 0,0:03:26.46,0:03:32.33,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       17.71   12       \N  2 Kuikahi, Kealoha     17.56   11       \N  3 Hernandez, Junior    25.46   11 7.148 \N  4 Xu, Nicholas         19.12   11 3.83  \N
+Dialogue: 0,0:03:32.33,0:03:32.43,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       17.71   12       \N_\N  3 Hernandez, Junior    25.46   11       \N  4 Xu, Nicholas         19.12   11 3.83  \N
+Dialogue: 0,0:03:32.43,0:03:40.73,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       17.71   12       \N  2 Kuikahi, Kealoha     17.66   12 5.969 \N  3 Hernandez, Junior    25.46   11       \N  4 Xu, Nicholas         19.12   11 3.83  \N
+Dialogue: 0,0:03:40.73,0:03:40.83,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       17.71   12       \N  2 Kuikahi, Kealoha     17.66   12 5.969 \N_\N  4 Xu, Nicholas         19.12   11       \N
+Dialogue: 0,0:03:40.83,0:03:46.00,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       17.71   12       \N  2 Kuikahi, Kealoha     17.66   12 5.969 \N  3 Hernandez, Junior    18.91   12 8.398 \N  4 Xu, Nicholas         19.12   11       \N
+Dialogue: 0,0:03:46.00,0:03:46.10,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N_\N  2 Kuikahi, Kealoha     17.66   12       \N  3 Hernandez, Junior    18.91   12 8.398 \N  4 Xu, Nicholas         19.12   11       \N
+Dialogue: 0,0:03:46.10,0:03:48.05,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       19.64   13       \N  2 Kuikahi, Kealoha     17.66   12       \N  3 Hernandez, Junior    18.91   12 8.398 \N  4 Xu, Nicholas         19.12   11       \N
+Dialogue: 0,0:03:48.05,0:03:48.15,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       19.64   13       \N  2 Kuikahi, Kealoha     17.66   12       \N  3 Hernandez, Junior    18.91   12 8.398 \N_\N
+Dialogue: 0,0:03:48.15,0:03:52.10,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       19.64   13       \N  2 Kuikahi, Kealoha     17.66   12       \N  3 Hernandez, Junior    18.91   12 8.398 \N  4 Xu, Nicholas          22.4   12 7.32  \N
+Dialogue: 0,0:03:52.10,0:03:52.20,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       19.64   13       \N_\N  3 Hernandez, Junior    18.91   12       \N  4 Xu, Nicholas          22.4   12 7.32  \N
+Dialogue: 0,0:03:52.20,0:03:59.31,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       19.64   13       \N  2 Kuikahi, Kealoha     19.77   13 6.099 \N  3 Hernandez, Junior    18.91   12       \N  4 Xu, Nicholas          22.4   12 7.32  \N
+Dialogue: 0,0:03:59.31,0:03:59.41,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       19.64   13       \N  2 Kuikahi, Kealoha     19.77   13 6.099 \N_\N  4 Xu, Nicholas          22.4   12       \N
+Dialogue: 0,0:03:59.41,0:04:03.90,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       19.64   13       \N  2 Kuikahi, Kealoha     19.77   13 6.099 \N  3 Hernandez, Junior    18.58   13 7.208 \N  4 Xu, Nicholas          22.4   12       \N
+Dialogue: 0,0:04:03.90,0:04:04.00,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N_\N  2 Kuikahi, Kealoha     19.77   13       \N  3 Hernandez, Junior    18.58   13 7.208 \N  4 Xu, Nicholas          22.4   12       \N
+Dialogue: 0,0:04:04.00,0:04:06.96,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave        17.9   14       \N  2 Kuikahi, Kealoha     19.77   13       \N  3 Hernandez, Junior    18.58   13 7.208 \N  4 Xu, Nicholas          22.4   12       \N
+Dialogue: 0,0:04:06.96,0:04:07.06,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave        17.9   14       \N  2 Kuikahi, Kealoha     19.77   13       \N  3 Hernandez, Junior    18.58   13 7.208 \N_\N
+Dialogue: 0,0:04:07.06,0:04:09.78,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave        17.9   14       \N  2 Kuikahi, Kealoha     19.77   13       \N  3 Hernandez, Junior    18.58   13 7.208 \N  4 Xu, Nicholas         18.91   13 7.65  \N
+Dialogue: 0,0:04:09.78,0:04:09.88,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave        17.9   14       \N_\N  3 Hernandez, Junior    18.58   13       \N  4 Xu, Nicholas         18.91   13 7.65  \N
+Dialogue: 0,0:04:09.88,0:04:18.57,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave        17.9   14       \N  2 Kuikahi, Kealoha     17.68   14 5.879 \N  3 Hernandez, Junior    18.58   13       \N  4 Xu, Nicholas         18.91   13 7.65  \N
+Dialogue: 0,0:04:18.57,0:04:18.67,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave        17.9   14       \N  2 Kuikahi, Kealoha     17.68   14 5.879 \N_\N  4 Xu, Nicholas         18.91   13       \N
+Dialogue: 0,0:04:18.67,0:04:22.93,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave        17.9   14       \N  2 Kuikahi, Kealoha     17.68   14 5.879 \N  3 Hernandez, Junior    19.26   14 8.788 \N  4 Xu, Nicholas         18.91   13       \N
+Dialogue: 0,0:04:22.93,0:04:23.03,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N_\N  2 Kuikahi, Kealoha     17.68   14       \N  3 Hernandez, Junior    19.26   14 8.788 \N  4 Xu, Nicholas         18.91   13       \N
+Dialogue: 0,0:04:23.03,0:04:26.11,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       19.03   15       \N  2 Kuikahi, Kealoha     17.68   14       \N  3 Hernandez, Junior    19.26   14 8.788 \N  4 Xu, Nicholas         18.91   13       \N
+Dialogue: 0,0:04:26.11,0:04:26.21,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       19.03   15       \N  2 Kuikahi, Kealoha     17.68   14       \N  3 Hernandez, Junior    19.26   14 8.788 \N_\N
+Dialogue: 0,0:04:26.21,0:04:27.39,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       19.03   15       \N  2 Kuikahi, Kealoha     17.68   14       \N  3 Hernandez, Junior    19.26   14 8.788 \N  4 Xu, Nicholas         19.15   14 7.54  \N
+Dialogue: 0,0:04:27.39,0:04:27.49,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       19.03   15       \N_\N  3 Hernandez, Junior    19.26   14       \N  4 Xu, Nicholas         19.15   14 7.54  \N
+Dialogue: 0,0:04:27.49,0:04:38.34,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       19.03   15       \N  2 Kuikahi, Kealoha     17.61   15 4.459 \N  3 Hernandez, Junior    19.26   14       \N  4 Xu, Nicholas         19.15   14 7.54  \N
+Dialogue: 0,0:04:38.34,0:04:38.44,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       19.03   15       \N  2 Kuikahi, Kealoha     17.61   15 4.459 \N_\N  4 Xu, Nicholas         19.15   14       \N
+Dialogue: 0,0:04:38.44,0:04:40.36,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       19.03   15       \N  2 Kuikahi, Kealoha     17.61   15 4.459 \N  3 Hernandez, Junior    19.77   15 10.948\N  4 Xu, Nicholas         19.15   14       \N
+Dialogue: 0,0:04:40.36,0:04:40.46,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N_\N  2 Kuikahi, Kealoha     17.61   15       \N  3 Hernandez, Junior    19.77   15 10.948\N  4 Xu, Nicholas         19.15   14       \N
+Dialogue: 0,0:04:40.46,0:04:44.84,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       17.43   16       \N  2 Kuikahi, Kealoha     17.61   15       \N  3 Hernandez, Junior    19.77   15 10.948\N  4 Xu, Nicholas         19.15   14       \N
+Dialogue: 0,0:04:44.84,0:04:44.94,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       17.43   16       \N_\N  3 Hernandez, Junior    19.77   15       \N  4 Xu, Nicholas         19.15   14       \N
+Dialogue: 0,0:04:44.94,0:04:52.08,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       17.43   16       \N  2 Kuikahi, Kealoha     17.45   16 4.479 \N  3 Hernandez, Junior    19.77   15       \N  4 Xu, Nicholas         19.15   14       \N
+Dialogue: 0,0:04:52.08,0:04:52.18,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       17.43   16       \N  2 Kuikahi, Kealoha     17.45   16 4.479 \N  3 Hernandez, Junior    19.77   15       \N_\N
+Dialogue: 0,0:04:52.18,0:04:56.39,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       17.43   16       \N  2 Kuikahi, Kealoha     17.45   16 4.479 \N  3 Hernandez, Junior    19.77   15       \N  4 Xu, Nicholas         25.97   15 13.74 \N
+Dialogue: 0,0:04:56.39,0:04:56.49,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       17.43   16       \N  2 Kuikahi, Kealoha     17.45   16 4.479 \N_\N  4 Xu, Nicholas         25.97   15       \N
+Dialogue: 0,0:04:56.49,0:04:57.66,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave       17.43   16       \N  2 Kuikahi, Kealoha     17.45   16 4.479 \N  3 Hernandez, Junior    18.05   16 11.548\N  4 Xu, Nicholas         25.97   15       \N
+Dialogue: 0,0:04:57.66,0:04:57.76,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N_\N  2 Kuikahi, Kealoha     17.45   16       \N  3 Hernandez, Junior    18.05   16 11.548\N  4 Xu, Nicholas         25.97   15       \N
+Dialogue: 0,0:04:57.76,0:05:02.15,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave        17.3   17       \N  2 Kuikahi, Kealoha     17.45   16       \N  3 Hernandez, Junior    18.05   16 11.548\N  4 Xu, Nicholas         25.97   15       \N
+Dialogue: 0,0:05:02.15,0:05:02.25,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave        17.3   17       \N_\N  3 Hernandez, Junior    18.05   16       \N  4 Xu, Nicholas         25.97   15       \N
+Dialogue: 0,0:05:02.25,0:05:15.05,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# Behind\N  1 Hemenway, Dave        17.3   17       \N  2 Kuikahi, Kealoha     17.31   17 4.489 \N  3 Hernandez, Junior    18.05   16       \N  4 Xu, Nicholas         25.97   15       \N
+Dialogue: 0,0:05:15.05,0:05:15.15,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# RaceTime  Behind FastLap Consistency\N_\N  2 Kuikahi, Kealoha     17.31   17  5:16.917 4.859    17.31 89.29      \N  3 Hernandez, Junior    18.05   16  5:13.089          17.82 88.7       \N  4 Xu, Nicholas         25.97   15  5:16.415          18.06 84.07      \N
+Dialogue: 0,0:05:15.15,0:05:16.07,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# RaceTime  Behind FastLap Consistency\N  1 Hemenway, Dave       17.39   18  5:12.058          17.15 91.82      \N  2 Kuikahi, Kealoha     17.31   17  5:16.917 4.859    17.31 89.29      \N  3 Hernandez, Junior    18.05   16  5:13.089          17.82 88.7       \N  4 Xu, Nicholas         25.97   15  5:16.415          18.06 84.07      \N
+Dialogue: 0,0:05:16.07,0:05:16.17,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# RaceTime  Behind FastLap Consistency\N  1 Hemenway, Dave       17.39   18  5:12.058          17.15 91.82      \N  2 Kuikahi, Kealoha     17.31   17  5:16.917 4.859    17.31 89.29      \N_\N  4 Xu, Nicholas         25.97   15  5:16.415          18.06 84.07      \N
+Dialogue: 0,0:05:16.17,0:05:19.40,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# RaceTime  Behind FastLap Consistency\N  1 Hemenway, Dave       17.39   18  5:12.058          17.15 91.82      \N  2 Kuikahi, Kealoha     17.31   17  5:16.917 4.859    17.31 89.29      \N  3 Hernandez, Junior    19.68   17  5:13.089          17.82 88.7       \N  4 Xu, Nicholas         25.97   15  5:16.415          18.06 84.07      \N
+Dialogue: 0,0:05:19.40,0:05:19.50,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# RaceTime  Behind FastLap Consistency\N  1 Hemenway, Dave       17.39   18  5:12.058          17.15 91.82      \N  2 Kuikahi, Kealoha     17.31   17  5:16.917 4.859    17.31 89.29      \N  3 Hernandez, Junior    19.68   17  5:13.089          17.82 88.7       \N_\N
+Dialogue: 0,0:05:19.50,0:05:19.89,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# RaceTime  Behind FastLap Consistency\N  1 Hemenway, Dave       17.39   18  5:12.058          17.15 91.82      \N  2 Kuikahi, Kealoha     17.31   17  5:16.917 4.859    17.31 89.29      \N  3 Hernandez, Junior    19.68   17  5:13.089          17.82 88.7       \N  4 Xu, Nicholas         27.32   16  5:16.415          18.06 84.07      \N
+Dialogue: 0,0:05:19.89,0:05:19.99,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# RaceTime  Behind FastLap Consistency\N  1 Hemenway, Dave       17.39   18  5:12.058          17.15 91.82      \N_\N  3 Hernandez, Junior    19.68   17  5:13.089          17.82 88.7       \N  4 Xu, Nicholas         27.32   16  5:16.415          18.06 84.07      \N
+Dialogue: 0,0:05:19.99,0:05:29.89,DefaultVCD,NTP,0,0,0,,{\an7}Pos Name               LastLap Lap# RaceTime  Behind FastLap Consistency\N  1 Hemenway, Dave       17.39   18  5:12.058          17.15 91.82      \N  2 Kuikahi, Kealoha     17.74   18  5:16.917 4.859    17.31 89.29      \N  3 Hernandez, Junior    19.68   17  5:13.089          17.82 88.7       \N  4 Xu, Nicholas         27.32   16  5:16.415          18.06 84.07      \N
+Dialogue: 0,0:00:03.06,0:00:04.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}5:00
+Dialogue: 0,0:00:04.06,0:00:05.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:59
+Dialogue: 0,0:00:05.06,0:00:06.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:58
+Dialogue: 0,0:00:06.06,0:00:07.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:57
+Dialogue: 0,0:00:07.06,0:00:08.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:56
+Dialogue: 0,0:00:08.06,0:00:09.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:55
+Dialogue: 0,0:00:09.06,0:00:10.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:54
+Dialogue: 0,0:00:10.06,0:00:11.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:53
+Dialogue: 0,0:00:11.06,0:00:12.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:52
+Dialogue: 0,0:00:12.06,0:00:13.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:51
+Dialogue: 0,0:00:13.06,0:00:14.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:50
+Dialogue: 0,0:00:14.06,0:00:15.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:49
+Dialogue: 0,0:00:15.06,0:00:16.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:48
+Dialogue: 0,0:00:16.06,0:00:17.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:47
+Dialogue: 0,0:00:17.06,0:00:18.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:46
+Dialogue: 0,0:00:18.06,0:00:19.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:45
+Dialogue: 0,0:00:19.06,0:00:20.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:44
+Dialogue: 0,0:00:20.06,0:00:21.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:43
+Dialogue: 0,0:00:21.06,0:00:22.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:42
+Dialogue: 0,0:00:22.06,0:00:23.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:41
+Dialogue: 0,0:00:23.06,0:00:24.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:40
+Dialogue: 0,0:00:24.06,0:00:25.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:39
+Dialogue: 0,0:00:25.06,0:00:26.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:38
+Dialogue: 0,0:00:26.06,0:00:27.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:37
+Dialogue: 0,0:00:27.06,0:00:28.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:36
+Dialogue: 0,0:00:28.06,0:00:29.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:35
+Dialogue: 0,0:00:29.06,0:00:30.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:34
+Dialogue: 0,0:00:30.06,0:00:31.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:33
+Dialogue: 0,0:00:31.06,0:00:32.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:32
+Dialogue: 0,0:00:32.06,0:00:33.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:31
+Dialogue: 0,0:00:33.06,0:00:34.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:30
+Dialogue: 0,0:00:34.06,0:00:35.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:29
+Dialogue: 0,0:00:35.06,0:00:36.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:28
+Dialogue: 0,0:00:36.06,0:00:37.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:27
+Dialogue: 0,0:00:37.06,0:00:38.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:26
+Dialogue: 0,0:00:38.06,0:00:39.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:25
+Dialogue: 0,0:00:39.06,0:00:40.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:24
+Dialogue: 0,0:00:40.06,0:00:41.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:23
+Dialogue: 0,0:00:41.06,0:00:42.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:22
+Dialogue: 0,0:00:42.06,0:00:43.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:21
+Dialogue: 0,0:00:43.06,0:00:44.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:20
+Dialogue: 0,0:00:44.06,0:00:45.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:19
+Dialogue: 0,0:00:45.06,0:00:46.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:18
+Dialogue: 0,0:00:46.06,0:00:47.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:17
+Dialogue: 0,0:00:47.06,0:00:48.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:16
+Dialogue: 0,0:00:48.06,0:00:49.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:15
+Dialogue: 0,0:00:49.06,0:00:50.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:14
+Dialogue: 0,0:00:50.06,0:00:51.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:13
+Dialogue: 0,0:00:51.06,0:00:52.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:12
+Dialogue: 0,0:00:52.06,0:00:53.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:11
+Dialogue: 0,0:00:53.06,0:00:54.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:10
+Dialogue: 0,0:00:54.06,0:00:55.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:09
+Dialogue: 0,0:00:55.06,0:00:56.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:08
+Dialogue: 0,0:00:56.06,0:00:57.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:07
+Dialogue: 0,0:00:57.06,0:00:58.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:06
+Dialogue: 0,0:00:58.06,0:00:59.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:05
+Dialogue: 0,0:00:59.06,0:01:00.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:04
+Dialogue: 0,0:01:00.06,0:01:01.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:03
+Dialogue: 0,0:01:01.06,0:01:02.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:02
+Dialogue: 0,0:01:02.06,0:01:03.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:01
+Dialogue: 0,0:01:03.06,0:01:04.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}4:00
+Dialogue: 0,0:01:04.06,0:01:05.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:59
+Dialogue: 0,0:01:05.06,0:01:06.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:58
+Dialogue: 0,0:01:06.06,0:01:07.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:57
+Dialogue: 0,0:01:07.06,0:01:08.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:56
+Dialogue: 0,0:01:08.06,0:01:09.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:55
+Dialogue: 0,0:01:09.06,0:01:10.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:54
+Dialogue: 0,0:01:10.06,0:01:11.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:53
+Dialogue: 0,0:01:11.06,0:01:12.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:52
+Dialogue: 0,0:01:12.06,0:01:13.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:51
+Dialogue: 0,0:01:13.06,0:01:14.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:50
+Dialogue: 0,0:01:14.06,0:01:15.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:49
+Dialogue: 0,0:01:15.06,0:01:16.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:48
+Dialogue: 0,0:01:16.06,0:01:17.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:47
+Dialogue: 0,0:01:17.06,0:01:18.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:46
+Dialogue: 0,0:01:18.06,0:01:19.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:45
+Dialogue: 0,0:01:19.06,0:01:20.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:44
+Dialogue: 0,0:01:20.06,0:01:21.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:43
+Dialogue: 0,0:01:21.06,0:01:22.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:42
+Dialogue: 0,0:01:22.06,0:01:23.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:41
+Dialogue: 0,0:01:23.06,0:01:24.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:40
+Dialogue: 0,0:01:24.06,0:01:25.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:39
+Dialogue: 0,0:01:25.06,0:01:26.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:38
+Dialogue: 0,0:01:26.06,0:01:27.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:37
+Dialogue: 0,0:01:27.06,0:01:28.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:36
+Dialogue: 0,0:01:28.06,0:01:29.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:35
+Dialogue: 0,0:01:29.06,0:01:30.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:34
+Dialogue: 0,0:01:30.06,0:01:31.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:33
+Dialogue: 0,0:01:31.06,0:01:32.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:32
+Dialogue: 0,0:01:32.06,0:01:33.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:31
+Dialogue: 0,0:01:33.06,0:01:34.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:30
+Dialogue: 0,0:01:34.06,0:01:35.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:29
+Dialogue: 0,0:01:35.06,0:01:36.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:28
+Dialogue: 0,0:01:36.06,0:01:37.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:27
+Dialogue: 0,0:01:37.06,0:01:38.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:26
+Dialogue: 0,0:01:38.06,0:01:39.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:25
+Dialogue: 0,0:01:39.06,0:01:40.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:24
+Dialogue: 0,0:01:40.06,0:01:41.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:23
+Dialogue: 0,0:01:41.06,0:01:42.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:22
+Dialogue: 0,0:01:42.06,0:01:43.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:21
+Dialogue: 0,0:01:43.06,0:01:44.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:20
+Dialogue: 0,0:01:44.06,0:01:45.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:19
+Dialogue: 0,0:01:45.06,0:01:46.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:18
+Dialogue: 0,0:01:46.06,0:01:47.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:17
+Dialogue: 0,0:01:47.06,0:01:48.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:16
+Dialogue: 0,0:01:48.06,0:01:49.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:15
+Dialogue: 0,0:01:49.06,0:01:50.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:14
+Dialogue: 0,0:01:50.06,0:01:51.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:13
+Dialogue: 0,0:01:51.06,0:01:52.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:12
+Dialogue: 0,0:01:52.06,0:01:53.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:11
+Dialogue: 0,0:01:53.06,0:01:54.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:10
+Dialogue: 0,0:01:54.06,0:01:55.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:09
+Dialogue: 0,0:01:55.06,0:01:56.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:08
+Dialogue: 0,0:01:56.06,0:01:57.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:07
+Dialogue: 0,0:01:57.06,0:01:58.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:06
+Dialogue: 0,0:01:58.06,0:01:59.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:05
+Dialogue: 0,0:01:59.06,0:02:00.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:04
+Dialogue: 0,0:02:00.06,0:02:01.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:03
+Dialogue: 0,0:02:01.06,0:02:02.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:02
+Dialogue: 0,0:02:02.06,0:02:03.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:01
+Dialogue: 0,0:02:03.06,0:02:04.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}3:00
+Dialogue: 0,0:02:04.06,0:02:05.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:59
+Dialogue: 0,0:02:05.06,0:02:06.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:58
+Dialogue: 0,0:02:06.06,0:02:07.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:57
+Dialogue: 0,0:02:07.06,0:02:08.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:56
+Dialogue: 0,0:02:08.06,0:02:09.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:55
+Dialogue: 0,0:02:09.06,0:02:10.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:54
+Dialogue: 0,0:02:10.06,0:02:11.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:53
+Dialogue: 0,0:02:11.06,0:02:12.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:52
+Dialogue: 0,0:02:12.06,0:02:13.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:51
+Dialogue: 0,0:02:13.06,0:02:14.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:50
+Dialogue: 0,0:02:14.06,0:02:15.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:49
+Dialogue: 0,0:02:15.06,0:02:16.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:48
+Dialogue: 0,0:02:16.06,0:02:17.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:47
+Dialogue: 0,0:02:17.06,0:02:18.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:46
+Dialogue: 0,0:02:18.06,0:02:19.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:45
+Dialogue: 0,0:02:19.06,0:02:20.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:44
+Dialogue: 0,0:02:20.06,0:02:21.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:43
+Dialogue: 0,0:02:21.06,0:02:22.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:42
+Dialogue: 0,0:02:22.06,0:02:23.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:41
+Dialogue: 0,0:02:23.06,0:02:24.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:40
+Dialogue: 0,0:02:24.06,0:02:25.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:39
+Dialogue: 0,0:02:25.06,0:02:26.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:38
+Dialogue: 0,0:02:26.06,0:02:27.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:37
+Dialogue: 0,0:02:27.06,0:02:28.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:36
+Dialogue: 0,0:02:28.06,0:02:29.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:35
+Dialogue: 0,0:02:29.06,0:02:30.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:34
+Dialogue: 0,0:02:30.06,0:02:31.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:33
+Dialogue: 0,0:02:31.06,0:02:32.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:32
+Dialogue: 0,0:02:32.06,0:02:33.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:31
+Dialogue: 0,0:02:33.06,0:02:34.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:30
+Dialogue: 0,0:02:34.06,0:02:35.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:29
+Dialogue: 0,0:02:35.06,0:02:36.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:28
+Dialogue: 0,0:02:36.06,0:02:37.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:27
+Dialogue: 0,0:02:37.06,0:02:38.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:26
+Dialogue: 0,0:02:38.06,0:02:39.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:25
+Dialogue: 0,0:02:39.06,0:02:40.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:24
+Dialogue: 0,0:02:40.06,0:02:41.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:23
+Dialogue: 0,0:02:41.06,0:02:42.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:22
+Dialogue: 0,0:02:42.06,0:02:43.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:21
+Dialogue: 0,0:02:43.06,0:02:44.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:20
+Dialogue: 0,0:02:44.06,0:02:45.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:19
+Dialogue: 0,0:02:45.06,0:02:46.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:18
+Dialogue: 0,0:02:46.06,0:02:47.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:17
+Dialogue: 0,0:02:47.06,0:02:48.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:16
+Dialogue: 0,0:02:48.06,0:02:49.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:15
+Dialogue: 0,0:02:49.06,0:02:50.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:14
+Dialogue: 0,0:02:50.06,0:02:51.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:13
+Dialogue: 0,0:02:51.06,0:02:52.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:12
+Dialogue: 0,0:02:52.06,0:02:53.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:11
+Dialogue: 0,0:02:53.06,0:02:54.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:10
+Dialogue: 0,0:02:54.06,0:02:55.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:09
+Dialogue: 0,0:02:55.06,0:02:56.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:08
+Dialogue: 0,0:02:56.06,0:02:57.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:07
+Dialogue: 0,0:02:57.06,0:02:58.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:06
+Dialogue: 0,0:02:58.06,0:02:59.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:05
+Dialogue: 0,0:02:59.06,0:03:00.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:04
+Dialogue: 0,0:03:00.06,0:03:01.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:03
+Dialogue: 0,0:03:01.06,0:03:02.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:02
+Dialogue: 0,0:03:02.06,0:03:03.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:01
+Dialogue: 0,0:03:03.06,0:03:04.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}2:00
+Dialogue: 0,0:03:04.06,0:03:05.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:59
+Dialogue: 0,0:03:05.06,0:03:06.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:58
+Dialogue: 0,0:03:06.06,0:03:07.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:57
+Dialogue: 0,0:03:07.06,0:03:08.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:56
+Dialogue: 0,0:03:08.06,0:03:09.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:55
+Dialogue: 0,0:03:09.06,0:03:10.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:54
+Dialogue: 0,0:03:10.06,0:03:11.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:53
+Dialogue: 0,0:03:11.06,0:03:12.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:52
+Dialogue: 0,0:03:12.06,0:03:13.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:51
+Dialogue: 0,0:03:13.06,0:03:14.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:50
+Dialogue: 0,0:03:14.06,0:03:15.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:49
+Dialogue: 0,0:03:15.06,0:03:16.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:48
+Dialogue: 0,0:03:16.06,0:03:17.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:47
+Dialogue: 0,0:03:17.06,0:03:18.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:46
+Dialogue: 0,0:03:18.06,0:03:19.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:45
+Dialogue: 0,0:03:19.06,0:03:20.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:44
+Dialogue: 0,0:03:20.06,0:03:21.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:43
+Dialogue: 0,0:03:21.06,0:03:22.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:42
+Dialogue: 0,0:03:22.06,0:03:23.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:41
+Dialogue: 0,0:03:23.06,0:03:24.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:40
+Dialogue: 0,0:03:24.06,0:03:25.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:39
+Dialogue: 0,0:03:25.06,0:03:26.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:38
+Dialogue: 0,0:03:26.06,0:03:27.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:37
+Dialogue: 0,0:03:27.06,0:03:28.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:36
+Dialogue: 0,0:03:28.06,0:03:29.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:35
+Dialogue: 0,0:03:29.06,0:03:30.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:34
+Dialogue: 0,0:03:30.06,0:03:31.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:33
+Dialogue: 0,0:03:31.06,0:03:32.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:32
+Dialogue: 0,0:03:32.06,0:03:33.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:31
+Dialogue: 0,0:03:33.06,0:03:34.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:30
+Dialogue: 0,0:03:34.06,0:03:35.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:29
+Dialogue: 0,0:03:35.06,0:03:36.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:28
+Dialogue: 0,0:03:36.06,0:03:37.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:27
+Dialogue: 0,0:03:37.06,0:03:38.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:26
+Dialogue: 0,0:03:38.06,0:03:39.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:25
+Dialogue: 0,0:03:39.06,0:03:40.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:24
+Dialogue: 0,0:03:40.06,0:03:41.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:23
+Dialogue: 0,0:03:41.06,0:03:42.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:22
+Dialogue: 0,0:03:42.06,0:03:43.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:21
+Dialogue: 0,0:03:43.06,0:03:44.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:20
+Dialogue: 0,0:03:44.06,0:03:45.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:19
+Dialogue: 0,0:03:45.06,0:03:46.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:18
+Dialogue: 0,0:03:46.06,0:03:47.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:17
+Dialogue: 0,0:03:47.06,0:03:48.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:16
+Dialogue: 0,0:03:48.06,0:03:49.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:15
+Dialogue: 0,0:03:49.06,0:03:50.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:14
+Dialogue: 0,0:03:50.06,0:03:51.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:13
+Dialogue: 0,0:03:51.06,0:03:52.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:12
+Dialogue: 0,0:03:52.06,0:03:53.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:11
+Dialogue: 0,0:03:53.06,0:03:54.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:10
+Dialogue: 0,0:03:54.06,0:03:55.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:09
+Dialogue: 0,0:03:55.06,0:03:56.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:08
+Dialogue: 0,0:03:56.06,0:03:57.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:07
+Dialogue: 0,0:03:57.06,0:03:58.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:06
+Dialogue: 0,0:03:58.06,0:03:59.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:05
+Dialogue: 0,0:03:59.06,0:04:00.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:04
+Dialogue: 0,0:04:00.06,0:04:01.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:03
+Dialogue: 0,0:04:01.06,0:04:02.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:02
+Dialogue: 0,0:04:02.06,0:04:03.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:01
+Dialogue: 0,0:04:03.06,0:04:04.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}1:00
+Dialogue: 0,0:04:04.06,0:04:05.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:59
+Dialogue: 0,0:04:05.06,0:04:06.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:58
+Dialogue: 0,0:04:06.06,0:04:07.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:57
+Dialogue: 0,0:04:07.06,0:04:08.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:56
+Dialogue: 0,0:04:08.06,0:04:09.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:55
+Dialogue: 0,0:04:09.06,0:04:10.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:54
+Dialogue: 0,0:04:10.06,0:04:11.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:53
+Dialogue: 0,0:04:11.06,0:04:12.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:52
+Dialogue: 0,0:04:12.06,0:04:13.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:51
+Dialogue: 0,0:04:13.06,0:04:14.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:50
+Dialogue: 0,0:04:14.06,0:04:15.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:49
+Dialogue: 0,0:04:15.06,0:04:16.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:48
+Dialogue: 0,0:04:16.06,0:04:17.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:47
+Dialogue: 0,0:04:17.06,0:04:18.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:46
+Dialogue: 0,0:04:18.06,0:04:19.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:45
+Dialogue: 0,0:04:19.06,0:04:20.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:44
+Dialogue: 0,0:04:20.06,0:04:21.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:43
+Dialogue: 0,0:04:21.06,0:04:22.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:42
+Dialogue: 0,0:04:22.06,0:04:23.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:41
+Dialogue: 0,0:04:23.06,0:04:24.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:40
+Dialogue: 0,0:04:24.06,0:04:25.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:39
+Dialogue: 0,0:04:25.06,0:04:26.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:38
+Dialogue: 0,0:04:26.06,0:04:27.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:37
+Dialogue: 0,0:04:27.06,0:04:28.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:36
+Dialogue: 0,0:04:28.06,0:04:29.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:35
+Dialogue: 0,0:04:29.06,0:04:30.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:34
+Dialogue: 0,0:04:30.06,0:04:31.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:33
+Dialogue: 0,0:04:31.06,0:04:32.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:32
+Dialogue: 0,0:04:32.06,0:04:33.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:31
+Dialogue: 0,0:04:33.06,0:04:34.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:30
+Dialogue: 0,0:04:34.06,0:04:35.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:29
+Dialogue: 0,0:04:35.06,0:04:36.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:28
+Dialogue: 0,0:04:36.06,0:04:37.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:27
+Dialogue: 0,0:04:37.06,0:04:38.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:26
+Dialogue: 0,0:04:38.06,0:04:39.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:25
+Dialogue: 0,0:04:39.06,0:04:40.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:24
+Dialogue: 0,0:04:40.06,0:04:41.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:23
+Dialogue: 0,0:04:41.06,0:04:42.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:22
+Dialogue: 0,0:04:42.06,0:04:43.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:21
+Dialogue: 0,0:04:43.06,0:04:44.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:20
+Dialogue: 0,0:04:44.06,0:04:45.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:19
+Dialogue: 0,0:04:45.06,0:04:46.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:18
+Dialogue: 0,0:04:46.06,0:04:47.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:17
+Dialogue: 0,0:04:47.06,0:04:48.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:16
+Dialogue: 0,0:04:48.06,0:04:49.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:15
+Dialogue: 0,0:04:49.06,0:04:50.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:14
+Dialogue: 0,0:04:50.06,0:04:51.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:13
+Dialogue: 0,0:04:51.06,0:04:52.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:12
+Dialogue: 0,0:04:52.06,0:04:53.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:11
+Dialogue: 0,0:04:53.06,0:04:54.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:10
+Dialogue: 0,0:04:54.06,0:04:55.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:09
+Dialogue: 0,0:04:55.06,0:04:56.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:08
+Dialogue: 0,0:04:56.06,0:04:57.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:07
+Dialogue: 0,0:04:57.06,0:04:58.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:06
+Dialogue: 0,0:04:58.06,0:04:59.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:05
+Dialogue: 0,0:04:59.06,0:05:00.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:04
+Dialogue: 0,0:05:00.06,0:05:01.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:03
+Dialogue: 0,0:05:01.06,0:05:02.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:02
+Dialogue: 0,0:05:02.06,0:05:03.06,DefaultVCD,NTP,0,50,10,,{\c&H00FF00&\an8\fscx200\fscy200\fnQuartz MS}0:01

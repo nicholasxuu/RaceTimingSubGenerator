@@ -148,5 +148,12 @@ class RaceDriverLapResult {
 	function isEmpty() {
 		return empty($this->lapTimeList);
 	}
+
+	/**
+	 * @return int
+	 */
+	function getLapCount() {
+		return count($this->lapTimeList);
+	}
 	
 } 
