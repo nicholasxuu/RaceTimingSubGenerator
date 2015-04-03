@@ -5,7 +5,7 @@
  * Date: 7/8/14
  * Time: 5:48 PM
  */
-
+mb_internal_encoding("UTF-8");
 spl_autoload_extensions( '.php , .class.php' );
 function my_autoload($class) {
 	$classSepIndex = strrpos($class, "\\");

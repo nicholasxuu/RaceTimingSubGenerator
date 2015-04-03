@@ -69,7 +69,7 @@ class TimingScoring {
 
 						$this_pos = $this->makeLengthString($ctdd->pos, 3, "right");
 						$this_name = $this->makeLengthString($ctdd->name, 18, "left");
-						$this_lastlap = $this->makeLengthString($ctdd->lastLap, 7, "right", "cut");
+						$this_lastlap = $this->makeLengthString($ctdd->lastLap, 7, "left", "cut");
 						$this_lapNo = $this->makeLengthString($ctdd->lapNo, 4, "right");
 						$this_behind = $this->makeLengthString(($ctdd->behind == 0 ? "" : $ctdd->behind), 6, "left", "cut");
 
@@ -100,7 +100,7 @@ class TimingScoring {
 
 						$this_pos = $this->makeLengthString($ctdd->pos, 3, "right");
 						$this_name = $this->makeLengthString($ctdd->name, 18, "left");
-						$this_lastlap = $this->makeLengthString($ctdd->lastLap, 7, "right", "cut");
+						$this_lastlap = $this->makeLengthString($ctdd->lastLap, 7, "left", "cut");
 						$this_lapNo = $this->makeLengthString($ctdd->lapNo, 4, "right");
 
 						// check if current car is finishing its last lap, if not, put some fields with empty string.
@@ -109,12 +109,12 @@ class TimingScoring {
 							$this_behind = $this->makeLengthString($this->raceResult->driverList[$this_did]->behind, 6, "left", "cut");
 
 							$this_racetime = $this->makeLengthString($this->raceResult->driverList[$this_did]->totalTime, 9, "right", "cut");
-							$this_fastlap = $this->makeLengthString($this->raceResult->driverList[$this_did]->lapData->getBestlap(true), 7, "right", "cut");
+							$this_fastlap = $this->makeLengthString($this->raceResult->driverList[$this_did]->lapData->getBestlap(true), 7, "left", "cut");
 							$this_consistency = $this->makeLengthString($this->raceResult->driverList[$this_did]->lapData->getConsistency(true), 11, "left", "cut");
 						} else {
 							$this_behind = $this->makeLengthString(($ctdd->behind == 0 ? "" : $ctdd->behind), 6, "left", "cut");
 							$this_racetime = $this->makeLengthString("", 9, "right", "cut");
-							$this_fastlap = $this->makeLengthString("", 7, "right", "cut");
+							$this_fastlap = $this->makeLengthString("", 7, "left", "cut");
 							$this_consistency = $this->makeLengthString("", 11, "left", "cut");
 						}
 
@@ -220,6 +220,7 @@ class TimingScoring {
 		$this->raceTime = $min;
 	}
 
+
 	/**
 	 * create a string at the correct length, if overlength, shorten and finish with "..."
 	 * Initially designed for making driver names fit in field.
@@ -233,7 +234,7 @@ class TimingScoring {
 			$str = strval($str);
 		}
 		
-		if (mb_strlen($str) > $len) {
+		if (mb_strwidth($str) > $len) {
 			if ($overLength == '...') {
 				$str = mb_substr($str, 0, $len-3) . "...";
 			} else if ($overLength == "cut") {
@@ -242,8 +243,8 @@ class TimingScoring {
 		}
 		
 		$whiteStr = "";
-		for ($i = 0; $i < $len - mb_strlen($str); $i++) {
-			$whiteStr .= " ";
+		for ($i = 0; $i < $len - mb_strwidth($str); $i++) {
+			$whiteStr .= "_";
 		}
 		
 		if ($align == "right") {
