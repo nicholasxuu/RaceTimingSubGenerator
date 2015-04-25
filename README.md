@@ -1,6 +1,8 @@
 RaceTimingSubGenerator
 ======================
 
+Sample result video: https://www.youtube.com/watch?v=pZfw44pyEMY
+
 Cleaned up OOP version of norcal-timing-etc project, with interface and easier usability function added.
 
 Most information can be found in an earlier project called: norcal-hobbies-result-subtitle-generator.
