@@ -13,9 +13,9 @@ Changes:
 
 1. Overhauled the code, so it's easier to maintain. (old project started as an idea with 3 evenings' hack).
 
-2. Added an not so good look, but functional interface. 
+2. Added functional interface. 
 
-3. Accepts 3 types of input files:
+3. Accepts 4 types of input files:
 
   -MyLaps data from official website.
   
@@ -23,7 +23,10 @@ Changes:
   
   -Go Kart Racer result sheet from their website.
   
-4. Added function to make the sync job easier. Before, it requires calculation and trial to sync subtitle with video.
+  -Livetiming data sheet. 
+  
+4. Added function to make the video/subtitle sync easier. 
+    Before, it requires calculation and trial to sync subtitle with video.
 
   Now, you just need to find any driver's any cross line time in video, input into the interface and it will calcuate the sync timing for you.
   
