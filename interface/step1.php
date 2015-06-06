@@ -19,6 +19,7 @@
 		<option value="RCScoringPro">RCScoringPro</option>
 		<option value="MyLaps">MyLaps</option>
 		<option value="GoKartRacer">GoKartRacer</option>
+		<option value="LiveTiming">LiveTiming</option>
 	</select>
 	<br/>
 	<br/>

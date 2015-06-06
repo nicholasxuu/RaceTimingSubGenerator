@@ -22,7 +22,7 @@ class LivetimeRCDataParser {
 	 */
 	function is_race_name_row($columns) {
 		foreach ($columns as $co) {
-			if (strstr($co, "Mains :: Race") !== false) {
+			if (strstr($co, "Mains :: Race") !== false || preg_match('/Round.*Race \d+/', $co)) {
 				return true;
 			}
 		}
@@ -182,5 +182,9 @@ class LivetimeRCDataParser {
 		if (!empty($currentTable)) {
 			$currentTable = $this->process_table($currentTable);
 		}
+
+		//$currRaceId = (string) $this->totalResult->addRace("the only race");
+		$this->totalResult = new Event\TotalResult();
+		$this->totalResult->raceResultList[0] = $this->raceResult;
 	}
 } 

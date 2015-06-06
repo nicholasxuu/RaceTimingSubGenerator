@@ -61,6 +61,7 @@ if ($_POST['input_type'] == "file_upload") {
 		}
 		if (!empty($content2)) {
 			$content .= "\n\n" . $content2;
+
 		}
 	} catch (Exception $e) {
 		echo $e;
@@ -74,7 +75,7 @@ if (!isset($content) || empty($content)) {
 	exit;
 }
 
-$file = preg_split("/(\r|\n|\r\n)/u", $content);
+$file = preg_split("/(\r\n|\r|\n)/u", $content);
 
 if ($_POST['input_origin'] == "RCScoringPro") {
 	$parser = new Model\Parser\NCHDataParser($file);
@@ -82,6 +83,8 @@ if ($_POST['input_origin'] == "RCScoringPro") {
 	$parser = new Model\Parser\MylapsDataParser($file);
 } else if ($_POST['input_origin'] == "GoKartRacer") {
 	$parser = new Model\Parser\GKRDataParser($file);
+} else if ($_POST['input_origin'] == "LiveTiming") {
+	$parser = new Model\Parser\LivetimeRCDataParser($file);
 } else {
 	echo "empty input type.";
 	exit;

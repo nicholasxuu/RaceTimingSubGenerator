@@ -126,7 +126,6 @@ class MylapsDataParser {
 						}
 						$this->totalResult->raceResultList[0]->driverList[$this->totalResult->raceResultList[0]->getIdByCarNum($currracerId)]->lapData->addLapTime($laptime, $this->minLegalLaptime);
 					}
-
 				}
 			}
 		}
